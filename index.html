@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Scouter — Time Traveler: a 13-week album release campaign plan.">
 <meta property="og:title" content="Scouter — Time Traveler · Release Campaign">
 <meta property="og:description" content="A 13-week album release campaign plan — schedule, registrations, marketing, merch, budget, live, sync, press, and the game.">
@@ -240,6 +240,29 @@
     .dcol.lead-col{border-right:0;border-bottom:2px solid var(--line)}
     .reg-grid{grid-template-columns:1fr}
   }
+  /* ---------- iPhone / small-screen pass ---------- */
+  @media (max-width:520px){
+    .wrap{padding:0 15px}
+    section{padding:34px 0}
+    section.stack{padding-top:22px}
+    .masthead .wrap{padding:20px 15px 22px}
+    .mh-title{font-size:clamp(1.6rem,8.5vw,2.4rem)}
+    .mh-eyebrow{font-size:.6rem}
+    .acc-btn{padding:15px 15px;gap:10px}
+    .acc-title{font-size:1.1rem}
+    .acc-chev{font-size:1.1rem}
+    .acc.sub .acc-btn{padding:12px 13px;gap:9px}
+    .acc.wk .acc-btn{padding:11px 12px;gap:9px}
+    .acc-panel{padding-top:18px}
+    .detail-head{padding:14px 15px;gap:10px}
+    .dh-hash{font-size:1.6rem}
+    .dh-title{font-size:1.06rem}
+    .dcol{padding:15px}
+    .spec{grid-template-columns:70px 1fr;gap:6px 10px}
+    .merch th,.merch td{padding:8px 9px}
+    .note{padding:14px 15px}
+    ul.chk li,.spec dd{font-size:.88rem}
+  }
   @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 </style>
 
@@ -248,7 +271,7 @@
     <div class="mh-left">
       <span class="mh-eyebrow">Desert Fuzz</span>
       <div class="mh-title">Scouter — <span class="tt">Time Traveler</span></div>
-      <span class="mh-sub">Album Release Campaign · <span style="color:var(--neon)">"One Week at a Time"</span></span>
+      <span class="mh-sub">Album Release Campaign</span>
     </div>
   </div>
 </header>
