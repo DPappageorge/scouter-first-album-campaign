@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Scouter — Time Traveler: a 13-week album release campaign plan.">
 <meta property="og:title" content="Scouter — Time Traveler · Release Campaign">
-<meta property="og:description" content="A 13-week album release campaign plan — schedule, registrations, marketing, merch, budget, live, sync, press, and the game.">
+<meta property="og:description" content="A 13-week album release campaign plan.">
 <meta name="robots" content="noindex">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🛸%3C/text%3E%3C/svg%3E">
 </head>
@@ -296,11 +296,6 @@
       <div class="acc-panel open" id="p-schedule" role="region" aria-labelledby="btn-schedule">
         <div class="tl-scroll">
           <div class="timeline">
-            <div class="tl-phases">
-              <div class="tl-phase p0">00 · Foundation (setup)</div>
-              <div class="tl-phase p1">01 · The Serial — 13 singles over 13 weeks</div>
-              <div class="tl-phase p2">02 · Album</div>
-            </div>
             <div class="tl-track" id="tl-track"></div>
           </div>
         </div>
@@ -1052,10 +1047,9 @@
   var track=document.getElementById('tl-track');
   track.innerHTML=WEEKS.map(function(w,i){
     var cls='tl-node'+(i===0?' active':'')+(w.hol?' hol':'')+(w.lp?' lp':'');
-    var flag=w.tlFlag?'<span class="tl-flag">'+w.tlFlag+'</span>':'';
     return '<button class="'+cls+'" data-target="d'+(i+1)+'" aria-expanded="'+(i===0?'true':'false')+'">'
       +'<span class="tl-dot"></span><span class="tl-hash">'+w.hash+'</span>'
-      +'<span class="tl-date">Week '+w.week+'</span><span class="tl-title">'+w.tlTitle+'</span>'+flag+'</button>';
+      +'<span class="tl-date">Week '+w.week+'</span><span class="tl-title">'+w.tlTitle+'</span></button>';
   }).join('');
 
   /* ================= RENDER: DETAIL PANELS ================= */
