@@ -1,0 +1,1192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Scouter — Time Traveler: a 13-week album release campaign plan.">
+<meta property="og:title" content="Scouter — Time Traveler · Release Campaign">
+<meta property="og:description" content="A 13-week album release campaign plan — schedule, registrations, marketing, merch, budget, live, sync, press, and the game.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🛸%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<title>SCOUTER — Time Traveler · Release Plan</title>
+<style>
+  :root{
+    --ink:#0a0f0a;--paper:#f4f1e8;--neon:#00c853;--neon-bright:#2eff8b;--neon-deep:#0b6b2b;
+    --ground:#ece6d6;--card:#f6f2e7;--card-2:#e6dfcd;
+    --fg:#0a0f0a;--fg-soft:#454a41;--fg-faint:#767a6c;
+    --line:#0a0f0a;--line-soft:rgba(10,15,10,.16);
+    --accent:#00b64c;--accent-ink:#0b6b2b;--shadow:#0a0f0a;
+    --disp:"Arial Black","Arial Narrow Bold",Impact,"Helvetica Neue",sans-serif;
+    --body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+    --wrap:1180px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--ground:#0a0f0a;--card:#12180f;--card-2:#0e140c;
+      --fg:#f4f1e8;--fg-soft:#bcc4b4;--fg-faint:#7f887a;
+      --line:#f4f1e8;--line-soft:rgba(244,241,232,.2);
+      --accent:#2eff8b;--accent-ink:#2eff8b;--shadow:#00c853;}
+  }
+  :root[data-theme="light"]{--ground:#ece6d6;--card:#f6f2e7;--card-2:#e6dfcd;
+    --fg:#0a0f0a;--fg-soft:#454a41;--fg-faint:#767a6c;
+    --line:#0a0f0a;--line-soft:rgba(10,15,10,.16);--accent:#00b64c;--accent-ink:#0b6b2b;--shadow:#0a0f0a;}
+  :root[data-theme="dark"]{--ground:#0a0f0a;--card:#12180f;--card-2:#0e140c;
+    --fg:#f4f1e8;--fg-soft:#bcc4b4;--fg-faint:#7f887a;
+    --line:#f4f1e8;--line-soft:rgba(244,241,232,.2);--accent:#2eff8b;--accent-ink:#2eff8b;--shadow:#00c853;}
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--ground);color:var(--fg);font-family:var(--body);line-height:1.6;font-size:16px;overflow-x:hidden}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+  a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--neon);outline-offset:3px}
+  h1,h2,h3{font-family:var(--disp);font-weight:900;text-wrap:balance;line-height:1;margin:0;text-transform:uppercase}
+  h2{font-size:clamp(1.5rem,3.6vw,2.4rem);letter-spacing:-.01em}
+  h3{font-size:1.02rem}
+  .box{background:var(--card);border:2px solid var(--line);box-shadow:5px 5px 0 var(--shadow)}
+  .eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--fg-faint)}
+
+  /* ---------- HEADER ---------- */
+  .masthead{position:relative;overflow:hidden;background:var(--ink);color:var(--paper);border-bottom:3px solid var(--ink)}
+  .masthead::before{content:"";position:absolute;inset:0;opacity:.13;pointer-events:none;background-image:radial-gradient(var(--neon) 1px,transparent 1.5px);background-size:8px 8px}
+  .masthead .wrap{position:relative;z-index:2;padding:26px 24px 28px;display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 26px;justify-content:space-between}
+  .mh-left{display:flex;flex-direction:column;gap:8px}
+  .mh-eyebrow{font-family:var(--mono);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--neon-bright)}
+  .mh-title{font-family:var(--disp);font-weight:900;text-transform:uppercase;line-height:.94;letter-spacing:-.02em;font-size:clamp(1.9rem,6vw,3.4rem);color:var(--paper)}
+  .mh-title .tt{color:var(--neon)}
+  .mh-sub{font-family:var(--mono);font-size:.72rem;letter-spacing:.03em;color:#c3c6b8;text-transform:uppercase}
+  .mh-status{font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);background:var(--neon);border:2px solid var(--neon);padding:6px 10px;white-space:nowrap}
+
+  section{padding:clamp(38px,5.5vw,62px) 0}
+  section.stack{padding-top:clamp(26px,4vw,38px)}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+  .sec-head .num{font-family:var(--mono);font-weight:700;font-size:.82rem;color:var(--accent);letter-spacing:.06em}
+  .lead{max-width:70ch;color:var(--fg-soft);font-size:1.02rem;margin:12px 0 0}
+  .lead b{color:var(--fg)}
+  .rule{height:2px;background:var(--line);border:0;margin:0}
+
+  /* ---------- ACCORDION ---------- */
+  .acc{margin-bottom:16px}
+  .acc-btn{width:100%;display:flex;align-items:center;gap:16px;text-align:left;cursor:pointer;
+    background:var(--card);border:2px solid var(--line);box-shadow:5px 5px 0 var(--shadow);
+    padding:18px 22px;font:inherit;color:inherit;transition:background .12s}
+  .acc-btn:hover{background:var(--card-2)}
+  .acc-num{font-family:var(--mono);font-weight:700;color:var(--accent);font-size:.9rem}
+  .acc-title{font-family:var(--disp);font-weight:900;text-transform:uppercase;font-size:clamp(1.2rem,3.4vw,1.9rem);letter-spacing:-.01em;flex:1;line-height:1}
+  .acc-hint{font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-faint);display:none;white-space:nowrap}
+  @media(min-width:760px){.acc-hint{display:inline}}
+  .acc-chev{font-size:1.3rem;line-height:1;transition:transform .2s ease;color:var(--accent)}
+  .acc-btn[aria-expanded="true"] .acc-chev{transform:rotate(180deg)}
+  .acc-panel{display:none;padding-top:24px}
+  .acc-panel.open{display:block}
+  @media (prefers-reduced-motion:no-preference){.acc-panel.open{animation:reveal .2s ease}
+    @keyframes reveal{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}}
+
+  /* ---------- TIMELINE ---------- */
+  .tl-caption{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 16px;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-faint)}
+  .tl-caption .hint{color:var(--ink);background:var(--neon);border:2px solid var(--ink);padding:4px 9px;font-weight:700;letter-spacing:.06em}
+  .tl-scroll{overflow-x:auto;padding:6px 2px 6px}
+  .timeline{position:relative;min-width:940px;padding:2px 0 0}
+  .tl-phases{display:flex;gap:6px;margin-bottom:20px}
+  .tl-phase{font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border:2px solid var(--line);color:var(--fg);white-space:nowrap;font-weight:600}
+  .tl-phase.p1{flex:1 1 auto;background:var(--neon);color:var(--ink);border-color:var(--neon)}
+  .tl-phase.p2{flex:0 0 auto;background:var(--ink);color:var(--paper)}
+  :root[data-theme="dark"] .tl-phase.p2{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tl-phase.p2{background:var(--paper);color:var(--ink);border-color:var(--paper)}}
+  .tl-track{position:relative;display:flex}
+  .tl-track::before{content:"";position:absolute;top:9px;left:calc(100%/28);right:calc(100%/28);height:3px;background:var(--line)}
+  .tl-node{flex:1 1 0;position:relative;display:flex;flex-direction:column;align-items:center;gap:7px;text-align:center;padding:0 2px 4px;background:none;border:0;cursor:pointer;font:inherit;color:inherit;-webkit-tap-highlight-color:transparent}
+  .tl-dot{width:18px;height:18px;border-radius:50%;background:var(--card);border:3px solid var(--line);z-index:1;transition:transform .12s ease,background .12s}
+  .tl-node:hover .tl-dot{background:var(--neon-bright)}
+  .tl-node.active .tl-dot{background:var(--neon);border-color:var(--ink);transform:scale(1.25)}
+  .tl-node.lp .tl-dot{width:22px;height:22px;margin-top:-2px;background:var(--ink);border-color:var(--neon);box-shadow:0 0 0 3px var(--ground),0 0 0 5px var(--neon)}
+  :root[data-theme="dark"] .tl-node.lp .tl-dot{background:var(--paper)}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tl-node.lp .tl-dot{background:var(--paper)}}
+  .tl-hash{font-family:var(--disp);font-weight:900;font-size:1.06rem;letter-spacing:-.02em}
+  .tl-node.active .tl-hash,.tl-node.lp .tl-hash{color:var(--accent)}
+  .tl-date{font-family:var(--mono);font-size:.62rem;color:var(--fg-soft);letter-spacing:.02em;font-variant-numeric:tabular-nums}
+  .tl-title{font-family:var(--mono);font-size:.56rem;letter-spacing:.04em;text-transform:uppercase;color:var(--fg-faint);max-width:9ch;line-height:1.25}
+  .tl-node.hol .tl-dot{border-style:dashed}
+  .tl-node .tl-flag{font-family:var(--mono);font-size:.5rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink)}
+
+  /* ---------- DETAIL ---------- */
+  .detail{display:none;margin-top:26px}
+  .detail.on{display:block}
+  @media (prefers-reduced-motion:no-preference){.detail.on{animation:reveal .18s ease}}
+  .detail-card{background:var(--card);border:2px solid var(--line);box-shadow:6px 6px 0 var(--shadow)}
+  .detail-head{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:16px 22px;border-bottom:2px solid var(--line);background:var(--card-2)}
+  .dh-hash{font-family:var(--disp);font-weight:900;font-size:2rem;letter-spacing:-.02em;color:var(--accent);line-height:1}
+  .dh-main{flex:1 1 240px;min-width:200px}
+  .dh-title{font-family:var(--disp);font-weight:900;font-size:1.24rem;text-transform:uppercase;letter-spacing:-.01em}
+  .dh-title .pill{vertical-align:3px}
+  .dh-beat{display:none}
+  .dh-date{font-family:var(--mono);font-size:.78rem;text-align:right;letter-spacing:.02em;color:var(--fg);font-variant-numeric:tabular-nums}
+  .dh-date .wk{display:block;font-size:.62rem;color:var(--fg-faint);letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px}
+  .dh-date .flag{display:inline-block;margin-top:6px;font-family:var(--mono);font-size:.56rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:var(--neon);border:2px solid var(--ink);padding:2px 6px}
+  .detail-grid{display:grid;grid-template-columns:1.15fr .85fr}
+  .dcol{padding:20px 22px}
+  .dcol.lead-col{border-right:2px solid var(--line)}
+  .dcol.rel-col{background:rgba(0,200,83,.06)}
+  .dcol h4{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px;color:var(--fg-faint)}
+  .dcol h4 .k{color:var(--accent)}
+  .sub-label{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink);font-weight:700;margin:0 0 8px}
+  ul.chk{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+  ul.chk li{position:relative;padding-left:26px;font-size:.9rem;color:var(--fg-soft);line-height:1.45}
+  ul.chk li::before{content:"";position:absolute;left:0;top:2px;width:14px;height:14px;border:2px solid var(--line)}
+  ul.chk li b{color:var(--fg);font-weight:600}
+  ul.chk.reg li::before{border-color:var(--accent-ink);background:rgba(0,200,83,.18)}
+  ul.chk.drop li::before{border-color:var(--ink);background:var(--neon)}
+  :root[data-theme="dark"] ul.chk.drop li::before{border-color:var(--paper)}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) ul.chk.drop li::before{border-color:var(--paper)}}
+  .pill{display:inline-block;font-family:var(--mono);font-weight:700;font-size:.58rem;letter-spacing:.04em;padding:1px 5px;background:var(--neon);color:var(--ink);border:1.5px solid var(--ink);margin-right:4px}
+  .hook{margin-top:16px;padding:12px 14px;border:2px dashed var(--line-soft);background:rgba(0,200,83,.05);font-size:.86rem;color:var(--fg-soft)}
+  .hook b{font-family:var(--mono);font-weight:700;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);display:block;margin-bottom:4px}
+
+  /* ---------- MATRIX ---------- */
+  .matrix-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+  .matrix-legend{display:flex;flex-wrap:wrap;gap:14px;font-family:var(--mono);font-size:.64rem;letter-spacing:.04em;text-transform:uppercase;color:var(--fg-soft)}
+  .matrix-legend span{display:inline-flex;align-items:center;gap:6px}
+  .lg{display:inline-grid;place-items:center;width:20px;height:20px;border:2px solid var(--line);font-size:.8rem}
+  .lg.todo{color:var(--fg-faint)}
+  .lg.wip{background:rgba(0,200,83,.22);color:var(--fg)}
+  .lg.done{background:var(--neon);color:var(--ink);border-color:var(--neon);font-weight:700}
+  .lg.na{color:var(--line-soft);border-color:var(--line-soft)}
+  .matrix-count{font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;color:var(--fg);font-weight:600}
+  .matrix-count b{color:var(--accent)}
+  .matrix-hint{font-family:var(--mono);font-size:.6rem;letter-spacing:.04em;text-transform:uppercase;color:var(--fg-faint);margin-bottom:14px}
+  .matrix-wrap{overflow-x:auto;border:2px solid var(--line);box-shadow:5px 5px 0 var(--shadow);background:var(--card)}
+  table.matrix{border-collapse:collapse;min-width:820px;width:100%}
+  .matrix th,.matrix td{border:1px solid var(--line-soft);padding:0;text-align:center}
+  .matrix thead th{background:var(--card-2);padding:9px 6px;position:sticky;top:0;z-index:2}
+  .mcol-k{font-family:var(--mono);font-weight:700;color:var(--fg);font-size:.66rem;letter-spacing:.03em}
+  .mcol-o{display:block;font-family:var(--mono);color:var(--fg-faint);font-size:.52rem;margin-top:3px;font-weight:400;text-transform:uppercase;letter-spacing:.03em}
+  .matrix th.corner,.matrix td.rowhead{position:sticky;left:0;background:var(--card-2);text-align:left;padding:9px 12px;white-space:nowrap;z-index:1}
+  .matrix th.corner{z-index:3;font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-faint)}
+  .rowhead .rh-hash{font-family:var(--disp);font-weight:900;color:var(--accent);margin-right:7px}
+  .rowhead .rh-title{font-family:var(--mono);font-size:.72rem;color:var(--fg)}
+  .cell{display:block;width:100%;min-width:52px;height:40px;border:0;background:none;cursor:pointer;font-family:var(--mono);font-size:1rem;color:var(--fg-faint);transition:background .1s}
+  .cell[data-s="wip"]{background:rgba(0,200,83,.22);color:var(--fg)}
+  .cell[data-s="done"]{background:var(--neon);color:var(--ink);font-weight:700}
+  :root[data-theme="dark"] .cell[data-s="wip"]{color:var(--paper)}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cell[data-s="wip"]{color:var(--paper)}}
+  .cell[data-s="na"]{color:var(--line-soft);cursor:default}
+  .cell:hover:not([data-s="na"]){outline:2px solid var(--neon);outline-offset:-2px}
+
+  /* ---------- REG LEGEND ---------- */
+  .reg-defs-h{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-faint);margin:34px 0 4px}
+  .reg-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}
+  .reg{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:16px 18px}
+  .reg .tag{font-family:var(--mono);font-weight:700;font-size:.72rem;letter-spacing:.03em;height:fit-content;padding:5px 8px;white-space:nowrap;border:2px solid var(--line);background:var(--ink);color:var(--paper)}
+  :root[data-theme="dark"] .reg .tag{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .reg .tag{background:var(--paper);color:var(--ink);border-color:var(--paper)}}
+  .reg.p .tag{background:var(--neon)!important;color:var(--ink)!important;border-color:var(--neon)!important}
+  .reg.i .tag{background:transparent!important;color:var(--accent-ink)!important;border-color:var(--neon)!important}
+  .reg h3{font-size:.98rem;margin-bottom:4px}
+  .reg p{margin:0;font-size:.88rem;color:var(--fg-soft);line-height:1.5}
+  .reg .meta{display:block;margin-top:8px;font-family:var(--mono);font-size:.64rem;letter-spacing:.03em;color:var(--fg-faint);text-transform:uppercase}
+
+  .note{background:rgba(0,200,83,.09);border:2px solid var(--neon);padding:16px 20px;margin-top:24px;font-size:.92rem;color:var(--fg);line-height:1.55}
+  .note b{color:var(--accent-ink)}
+
+  footer{padding:36px 0 56px;color:var(--fg-faint);font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+
+  /* ---------- MARKETING OVERVIEW ---------- */
+  .mkt-intro{max-width:72ch;color:var(--fg-soft);font-size:1.02rem;margin:0}
+  .mkt-intro b{color:var(--fg)}
+  .proc-list{display:flex;flex-direction:column;gap:8px}
+  .acc.sub{margin:18px 0 0}
+  .acc.sub .acc-btn{padding:14px 18px;box-shadow:4px 4px 0 var(--shadow)}
+  .acc.sub .acc-title{font-size:clamp(1rem,2.6vw,1.3rem)}
+  .acc.sub .acc-num{color:var(--ink);background:var(--neon);border:2px solid var(--ink);width:26px;height:26px;display:grid;place-items:center;font-size:.85rem;flex:none}
+  .acc.sub .acc-panel{padding-top:18px}
+  .acc.wk{margin:0}
+  .acc.wk .acc-btn{padding:11px 14px;box-shadow:none;gap:12px}
+  .acc.wk .acc-btn:hover{background:var(--card-2)}
+  .acc.wk .wk-lbl{font-family:var(--mono);font-weight:700;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+  .acc.wk .wk-name{flex:1;font-size:.9rem;color:var(--fg);text-align:left;line-height:1.3}
+  .acc.wk .acc-chev{font-size:1rem}
+  .acc.wk .acc-panel{padding:2px 14px 14px}
+  .spec{display:grid;grid-template-columns:92px 1fr;gap:8px 14px;margin:0;border-top:2px solid var(--line-soft);padding-top:12px}
+  .spec dt{font-family:var(--mono);font-weight:700;font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-faint);padding-top:2px}
+  .spec dd{margin:0;font-size:.85rem;color:var(--fg-soft);line-height:1.45}
+  .spec dd b{color:var(--fg)}
+  .pg-group{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;color:var(--fg);border-left:5px solid var(--neon);padding:2px 0 2px 10px;margin-bottom:10px}
+  .pg-group.mt{margin-top:22px}
+  .pg-group small{font-family:var(--mono);font-weight:400;font-size:.58rem;letter-spacing:.05em;color:var(--accent-ink);text-transform:none;margin-left:6px}
+  /* single = bolder row; its phases nested + indented */
+  .acc.single>.acc-btn{background:var(--card-2)}
+  .acc.single>.acc-btn .wk-lbl{color:var(--ink);background:var(--neon);border:2px solid var(--ink);padding:2px 6px}
+  .acc.single>.acc-btn .wk-name{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:.95rem}
+  .acc.single>.acc-panel{padding:12px 10px 12px 16px;border-left:3px solid var(--neon)}
+  .acc.single .acc.wk .acc-btn{background:transparent}
+
+  /* ---------- MERCH ---------- */
+  .merch-wrap{overflow-x:auto;border:2px solid var(--line);box-shadow:5px 5px 0 var(--shadow);background:var(--card);margin-top:8px}
+  table.merch{border-collapse:collapse;min-width:560px;width:100%}
+  .merch th,.merch td{border:1px solid var(--line-soft);padding:10px 12px;text-align:left}
+  .merch thead th{background:var(--card-2);font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-faint);position:sticky;top:0}
+  .merch th.num,.merch td.num{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:.82rem}
+  .merch tr.cat td{background:var(--card-2);font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:.82rem;border-left:5px solid var(--neon);color:var(--fg)}
+  .merch td.item{font-size:.9rem;color:var(--fg)}
+  .merch td.marg{color:var(--accent-ink);font-weight:700}
+  .merch tr.item-row:hover td{background:rgba(0,200,83,.05)}
+  .merch tfoot td{background:var(--card-2);font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.03em;color:var(--fg)}
+  .merch tfoot td.num{color:var(--accent-ink)}
+
+  @media (max-width:820px){
+    .detail-grid{grid-template-columns:1fr}
+    .dcol.lead-col{border-right:0;border-bottom:2px solid var(--line)}
+    .reg-grid{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="mh-left">
+      <span class="mh-eyebrow">Desert Fuzz</span>
+      <div class="mh-title">Scouter — <span class="tt">Time Traveler</span></div>
+      <span class="mh-sub">Album Release Campaign · <span style="color:var(--neon)">"One Week at a Time"</span></span>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="stack">
+  <div class="wrap">
+
+    <!-- ============ ACCORDION 1: SCHEDULE ============ -->
+    <div class="acc">
+      <button class="acc-btn" id="btn-schedule" aria-expanded="true" aria-controls="p-schedule">
+        <span class="acc-num">01</span>
+        <span class="acc-title">Schedule at a Glance</span>
+        <span class="acc-chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="acc-panel open" id="p-schedule" role="region" aria-labelledby="btn-schedule">
+        <div class="tl-scroll">
+          <div class="timeline">
+            <div class="tl-phases">
+              <div class="tl-phase p0">00 · Foundation (setup)</div>
+              <div class="tl-phase p1">01 · The Serial — 13 singles over 13 weeks</div>
+              <div class="tl-phase p2">02 · Album</div>
+            </div>
+            <div class="tl-track" id="tl-track"></div>
+          </div>
+        </div>
+        <div id="details"></div>
+      </div>
+    </div>
+
+    <!-- ============ ACCORDION 2: REGISTRATIONS ============ -->
+    <div class="acc">
+      <button class="acc-btn" id="btn-reg" aria-expanded="false" aria-controls="p-reg">
+        <span class="acc-num">02</span>
+        <span class="acc-title">Registrations</span>
+        <span class="acc-chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="acc-panel" id="p-reg" role="region" aria-labelledby="btn-reg">
+        <div class="matrix-top">
+          <div class="matrix-legend">
+            <span><i class="lg todo">○</i> To do</span>
+            <span><i class="lg wip">◐</i> In progress</span>
+            <span><i class="lg done">✓</i> Done</span>
+            <span><i class="lg na">–</i> N/A</span>
+          </div>
+          <div class="matrix-count" id="reg-count">0 of 0 complete</div>
+        </div>
+        <div class="matrix-wrap">
+          <table class="matrix" id="reg-matrix"><caption class="mono" style="display:none">Registration status by track and outlet</caption></table>
+        </div>
+
+        <div class="reg-defs-h">What each column means</div>
+        <div class="reg-grid">
+          <div class="reg p box"><div class="tag">SPLIT</div><div><h3>Songwriter split sheet</h3><p>Signed %-ownership of the composition by every writer, dated before release. The source of truth every downstream registration inherits.</p><span class="meta">Writers · per song · $0</span></div></div>
+          <div class="reg p box"><div class="tag">ISRC</div><div><h3>ISRC code</h3><p>Unique fingerprint for each recording — how streams and sales are counted back to you.</p><span class="meta">Distributor · per recording</span></div></div>
+          <div class="reg box"><div class="tag">UPC</div><div><h3>UPC / barcode</h3><p>Release-level identifier. Each single gets its own; the album gets another.</p><span class="meta">Distributor · per release</span></div></div>
+          <div class="reg box"><div class="tag">DIST</div><div><h3>Distributor delivery</h3><p>Audio + art + metadata uploaded (DistroKid / CD&nbsp;Baby / TuneCore). Deliver <b>4 weeks ahead</b> for playlist eligibility.</p><span class="meta">Distributor · T–4 weeks</span></div></div>
+          <div class="reg p box"><div class="tag">PRO</div><div><h3>PRO work registration</h3><p>Register the composition with ASCAP or BMI so public-performance royalties route to writers.</p><span class="meta">ASCAP/BMI · per song</span></div></div>
+          <div class="reg p box"><div class="tag">MLC</div><div><h3>The MLC — mechanical</h3><p>Register the work so U.S. streaming mechanicals are collected. Needs a publisher account.</p><span class="meta">The MLC · per song</span></div></div>
+          <div class="reg i box"><div class="tag">SX</div><div><h3>SoundExchange</h3><p>Collects digital-performance royalties for the <b>master</b> — money the distributor does <i>not</i> pay.</p><span class="meta">SoundExchange · add each recording</span></div></div>
+          <div class="reg p box"><div class="tag">CR</div><div><h3>U.S. Copyright registration</h3><p>File Form <b>PA</b> (composition) + <b>SR</b> (recording). Batch tracks to save fees.</p><span class="meta">Copyright Office · batchable</span></div></div>
+          <div class="reg box"><div class="tag">CID</div><div><h3>YouTube Content ID</h3><p>Register each master so uploads and Shorts using the track are claimed and monetized to you.</p><span class="meta">YouTube · per recording</span></div></div>
+          <div class="reg p box"><div class="tag">PRESAVE</div><div><h3>Pre-save / pre-add link</h3><p>Marketing counterpart to the release date — captures intent, boosts day-one velocity. Live 2 weeks out.</p><span class="meta">Feature.fm/Hypeddit · per single</span></div></div>
+        </div>
+        <div class="note"><b>Also worth doing:</b> keep a written agreement covering ownership of the cover art, and consider a <b>trademark</b> filing on the "Scouter" name and logo before the campaign makes them valuable.</div>
+      </div>
+    </div>
+
+    <!-- ============ ACCORDION 3: MARKETING OVERVIEW ============ -->
+    <div class="acc">
+      <button class="acc-btn" id="btn-mkt" aria-expanded="false" aria-controls="p-mkt">
+        <span class="acc-num">03</span>
+        <span class="acc-title">Marketing Overview</span>
+        <span class="acc-chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="acc-panel" id="p-mkt" role="region" aria-labelledby="btn-mkt">
+        <p class="mkt-intro">Three promotion streams run in parallel. The <b>process</b> is one evolving collection — a new piece every week as the story changes. Each <b>single</b> and the <b>album</b> run the same three phases: <b>prerelease → release → post-release</b>. Woven through all of it: <b>Scouter the Game</b> — every week ships a game clip scored to that single (surfaced in the Schedule panels and the Process stream below), so the music and the game promote each other.</p>
+
+        <div class="pg-group mt">How attention works in 2026</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>Short-form video is the #1 discovery channel</b> — ~47% of listeners find new music there before they hit a streaming service.</li>
+          <li><b>Volume + consistency:</b> batch <b>20–30 short clips per song</b> and post <b>3×/week</b> — that cadence drives ~2.5× more Spotify profile visits than posting weekly.</li>
+          <li><b>Context-first wins:</b> studio moments, the story behind a lyric, bloopers — real behind-the-scenes beats polished promo.</li>
+          <li><b>Build community, not just reach</b> — retention and direct fan relationships outlast any single viral spike.</li>
+        </ul>
+
+        <div class="pg-group mt">Paid ads <small>2026 benchmarks</small></div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li>~<b>$300–500 split across Meta + YouTube</b> per push → roughly <b>15k–40k targeted views</b> in 2–3 weeks.</li>
+          <li><b>Meta (FB/IG)</b> — the best targeting, ~4.2× average ROAS. <b>TikTok</b> — cheapest reach (~$9 CPM).</li>
+          <li><b>Spark Ads</b> (boosting your own organic clips) perform best — ~7.2% CTR, ~$0.89 CPC.</li>
+          <li>Put money behind whatever clip is <b>already working organically</b>; retarget everyone who engaged.</li>
+        </ul>
+
+        <!-- STREAM A: PROCESS -->
+        <div class="acc sub">
+          <button class="acc-btn" id="btn-mkt-a" aria-expanded="false" aria-controls="p-mkt-a"><span class="acc-num">A</span><span class="acc-title">Process Promotion</span><span class="acc-chev" aria-hidden="true">▾</span></button>
+          <div class="acc-panel" id="p-mkt-a" role="region" aria-labelledby="btn-mkt-a">
+            <p class="mkt-intro" style="margin:0 0 14px">Promotes the rollout itself — the 13-singles-in-13-weeks journey. One collection, a new piece every week as the story moves.</p>
+            <div class="proc-list" id="sb-process"></div>
+          </div>
+        </div>
+
+        <!-- STREAM B: SINGLE + ALBUM PHASES -->
+        <div class="acc sub">
+          <button class="acc-btn" id="btn-mkt-b" aria-expanded="false" aria-controls="p-mkt-b"><span class="acc-num">B</span><span class="acc-title">Single &amp; Album Content</span><span class="acc-chev" aria-hidden="true">▾</span></button>
+          <div class="acc-panel" id="p-mkt-b" role="region" aria-labelledby="btn-mkt-b">
+            <p class="mkt-intro" style="margin:0 0 14px">Every single, and the album, moves through the same three phases. All 13 singles are broken out below; the album gets its own curation.</p>
+            <div class="pg-group">The 13 singles <small>each broken out — click a single, then a phase</small></div>
+            <div id="sb-singles" class="proc-list"></div>
+            <div class="pg-group mt">The album <small>LP — its own curation</small></div>
+            <div id="sb-album" class="proc-list"></div>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top:20px">
+          <div style="font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;margin-bottom:8px">Caveats</div>
+          <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
+            <li>Platform algorithms &amp; rules change constantly — treat specific tactics/benchmarks as <b>current, not permanent</b>.</li>
+            <li>Short-form is a <b>volume game</b>: one viral hit won't carry a campaign — showing up weekly does.</li>
+            <li><b>Never buy fake followers/streams</b> — it poisons your targeting data and risks removal from DSPs.</li>
+            <li>Ad ROAS swings hugely on creative — start small, scale only the clips that already convert.</li>
+          </ul>
+        </div>
+        <div style="margin-top:14px;font-family:var(--mono);font-size:.66rem;letter-spacing:.04em;color:var(--fg-faint);line-height:1.7">
+          <div style="text-transform:uppercase;letter-spacing:.12em;color:var(--accent-ink);font-weight:700;margin-bottom:6px">Research sources</div>
+          <div>Short-form &amp; discovery — <a href="https://orphiq.com/resources/short-form-video-strategy-music" target="_blank" rel="noopener">Orphiq</a> · <a href="https://www.pepperagency.com/blog/social-media-marketing-for-the-music-industry-why-community-building-matters-more-than-virality-in-2026" target="_blank" rel="noopener">Pepper Agency</a></div>
+          <div>Ad ROI &amp; benchmarks — <a href="https://www.digitalapplied.com/blog/social-media-advertising-roi-2026-platform-guide" target="_blank" rel="noopener">Digital Applied ROI 2026</a> · <a href="https://www.chartlex.com/blog/marketing/social-media-strategy-musicians-what-works" target="_blank" rel="noopener">Chartlex</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ACCORDION 4: MERCH OVERVIEW ============ -->
+    <div class="acc">
+      <button class="acc-btn" id="btn-merch" aria-expanded="false" aria-controls="p-merch">
+        <span class="acc-num">04</span>
+        <span class="acc-title">Merch Overview</span>
+        <span class="acc-chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="acc-panel" id="p-merch" role="region" aria-labelledby="btn-merch">
+        <p class="mkt-intro" style="margin:0 0 14px">What to sell, the current per-unit cost from popular vendors, and a suggested retail price. <b>Margin is per unit</b> — confirm against live quotes before ordering.</p>
+        <div class="merch-wrap"><table class="merch" id="merch-table"></table></div>
+        <div class="note"><b>Cost basis (Sept 2026 vendor pricing):</b> apparel &amp; tote are <b>Printful/Printify print-on-demand base</b> costs — higher per unit than bulk, but zero inventory risk and no upfront spend, which suits a band. Music, pins &amp; posters are <b>bulk-press per-unit at a ~100–300 run</b> (per-unit drops at higher volume). Vinyl carries the longest lead time — order in the Foundation phase. Bundles sit below the sum of parts to lift average order value.</div>
+        <div style="margin-top:18px;font-family:var(--mono);font-size:.66rem;letter-spacing:.04em;color:var(--fg-faint);line-height:1.7">
+          <div style="text-transform:uppercase;letter-spacing:.12em;color:var(--accent-ink);font-weight:700;margin-bottom:6px">Price sources</div>
+          <div>Apparel &amp; tote (POD base) — <a href="https://www.ecommerceceo.com/printful-pricing/" target="_blank" rel="noopener">Printful Pricing 2026</a> · <a href="https://www.printful.com" target="_blank" rel="noopener">printful.com</a></div>
+          <div>Vinyl pressing — <a href="https://soundplate.com/vinyl-pressing-costs/" target="_blank" rel="noopener">Soundplate</a> · <a href="https://www.chartlex.com/blog/money/vinyl-pressing-cost-guide-2026" target="_blank" rel="noopener">Chartlex 2026</a></div>
+          <div>CD replication — <a href="https://blog.discmakers.com/2025/09/understanding-cd-replication-costs/" target="_blank" rel="noopener">Disc Makers</a></div>
+          <div>Cassette — <a href="https://leerecs.com/resources/cassette-manufacturing-guide" target="_blank" rel="noopener">Leerecs</a> · <a href="https://www.nationalaudiocompany.com/cassette-duplication-quote-calculator/" target="_blank" rel="noopener">National Audio Co.</a></div>
+          <div>Enamel pins — <a href="https://createpins.com/blog/how-much-do-enamel-pins-cost-in-2026/" target="_blank" rel="noopener">CreatePins 2026</a></div>
+          <div>Koozies — <a href="https://www.quality-perfection.com/collections/slim" target="_blank" rel="noopener">QualityPerfection</a></div>
+        </div>
+        <div class="note" style="margin-top:20px">
+          <div style="font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;margin-bottom:10px">Ideas &amp; notes</div>
+          <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:9px">
+            <li>A <b>7"</b> is a natural fit — it presses cheaper and faster than the 12" LP, and the A-side/B-side format pairs two singles nicely (e.g. lead single backed with the title track).</li>
+            <li><b>Push the 7":</b> make it a limited color / tour-only pressing to drive urgency, or tie it to a specific campaign week as a collectible drop.</li>
+            <li><b>Drop on Bandcamp Fridays:</b> Bandcamp waives its revenue share the first Friday of most months — line up single &amp; merch drops with those dates so nearly 100% goes to the band.</li>
+            <li><b>Limited numbered cassettes:</b> the stoner / desert / doom scene are avid tape collectors — a small color-shell run is cheap to make, high-margin, and tends to sell out.</li>
+            <li><b>"Ride the run" season pass:</b> one pre-order bundle covering all 13 singles + the LP + an exclusive (7" or test-pressing draw), paid up front — funds the campaign and locks in superfans early.</li>
+            <li><b>Test pressings as collectibles:</b> press ~10–20 hand-numbered vinyl test pressings and sell at a premium ($40–60) — near-zero extra cost, big markup, instant scarcity.</li>
+            <li><b>Two-tier vinyl:</b> keep standard black always in stock + one limited numbered color announced as ltd — drives FOMO and repeat buyers.</li>
+            <li><b>Prove, then bulk:</b> start apparel on print-on-demand (no risk); once a design sells, do a small bulk screen-print run to roughly double the per-shirt margin.</li>
+            <li><b>Low-entry item for everyone:</b> always offer a $5–6 sticker or pin so casual fans convert, then upsell to bundles.</li>
+            <li><b>Weight effort toward merch:</b> at this stage physical + merch will out-earn streaming by a wide margin — treat the store as the primary revenue line, streaming as discovery.</li>
+          </ul>
+        </div>
+        <div class="note" style="margin-top:16px">
+          <div style="font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;margin-bottom:8px">Caveats</div>
+          <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
+            <li><b>POD margins are thinner than they look</b> once platform + shipping are added — reserve print-on-demand for low-volume/long-tail; bulk screen-print the proven designs.</li>
+            <li><b>Vinyl lead times run 3–4+ months</b> — order in the Foundation phase or risk missing the album date entirely.</li>
+            <li>Price for <b>fees + shipping + sales tax</b>: Bandcamp keeps ~18% (≈0 on Bandcamp Fridays); Shopify adds monthly + transaction fees.</li>
+            <li><b>Bulk apparel = inventory + sizing risk.</b> Under-ordering a sold-out variant beats dead stock — don't over-buy sizes.</li>
+            <li>All costs are 2026 ballparks — get live quotes before committing to any run.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ACCORDION 5: BUDGET & REVENUE ============ -->
+    <div class="acc">
+      <button class="acc-btn" id="btn-budget" aria-expanded="false" aria-controls="p-budget">
+        <span class="acc-num">05</span><span class="acc-title">Budget &amp; Revenue</span>
+        <span class="acc-chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="acc-panel" id="p-budget" role="region" aria-labelledby="btn-budget">
+        <p class="mkt-intro" style="margin:0 0 14px">Rough campaign economics — what it costs to launch vs. where the money comes back. <b>Planning estimates</b> — drop in real quotes as they firm up.</p>
+        <div class="pg-group">Upfront costs</div>
+        <div class="merch-wrap"><table class="merch">
+          <thead><tr><th>Line item</th><th class="num">Est. cost</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr class="item-row"><td class="item">Vinyl LP pressing — ~200 run</td><td class="num">$2,200</td><td>~$11/unit · longest lead time, order first</td></tr>
+            <tr class="item-row"><td class="item">7" single pressing — ~150 run</td><td class="num">$750</td><td>~$5/unit · A/B collectible</td></tr>
+            <tr class="item-row"><td class="item">CD digipak — ~100</td><td class="num">$250</td><td>low-risk, cheap</td></tr>
+            <tr class="item-row"><td class="item">Cassette run — ~100</td><td class="num">$350</td><td>numbered / color shell</td></tr>
+            <tr class="item-row"><td class="item">Accessory seed stock (pins, stickers, posters, koozies)</td><td class="num">$500</td><td>first order</td></tr>
+            <tr class="item-row"><td class="item">Apparel</td><td class="num">$150</td><td>samples only — POD = $0 inventory</td></tr>
+            <tr class="item-row"><td class="item">Music videos (title track + finale, DIY)</td><td class="num">$1,000</td><td><b>optional</b> — 2 hero videos</td></tr>
+            <tr class="item-row"><td class="item">Paid ads (~$100/wk × 14)</td><td class="num">$1,400</td><td><b>optional</b> — Meta / TikTok</td></tr>
+            <tr class="item-row"><td class="item">PR / publicist (optional, 6–8 wks)</td><td class="num">$1,500</td><td>or DIY = $0</td></tr>
+            <tr class="item-row"><td class="item">Distribution (DistroKid)</td><td class="num">$50</td><td>annual</td></tr>
+            <tr class="item-row"><td class="item">Pre-save + tools (Feature.fm etc.)</td><td class="num">$100</td><td>campaign length</td></tr>
+            <tr class="item-row"><td class="item">Copyright filings (PA + SR batches)</td><td class="num">$200</td><td>3 batches</td></tr>
+            <tr class="item-row"><td class="item">Scouter the Game — Steam Direct fee</td><td class="num">$100</td><td>refunded after $1k sales · engine self-owned (no royalty)</td></tr>
+            <tr class="item-row"><td class="item">Mixing &amp; mastering — Darrell Thorp</td><td class="num">$7,800</td><td>done — already paid</td></tr>
+          </tbody>
+        </table></div>
+        <div class="note"><b>Break-even:</b> pick the line items you'll actually fund — whatever you spend, merch margins recoup it fast. Every LP nets ~$17, shirt ~$16.50, pin ~$9 (see Merch), with live and direct-digital stacking on top. Only commit to the runs and extras you can sell through.</div>
+        <div class="pg-group mt">Where revenue comes from</div>
+        <ul style="margin:0 0 16px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>Merch &amp; physical</b> — the primary line. Highest margins, and shows/Bandcamp keep nearly all of it.</li>
+          <li><b>Live shows</b> — the biggest single-night income; merch sells best in person (no fees/shipping).</li>
+          <li><b>Streaming</b> — mostly discovery + modest royalties; treat as the funnel, not the paycheck.</li>
+          <li><b>Sync / licensing</b> — speculative but potentially the largest single check; pure upside (see Sync accordion).</li>
+          <li><b>Publishing royalties</b> — PRO / MLC / SoundExchange trickle in over time once registered.</li>
+        </ul>
+
+        <div class="pg-group mt">Revenue streams <small>rates &amp; what you keep</small></div>
+        <div class="merch-wrap"><table class="merch">
+          <thead><tr><th>Stream</th><th>Basis — rates &amp; take-home</th><th>Your margin</th></tr></thead>
+          <tbody>
+            <tr class="item-row"><td class="item">Streaming</td><td>Per-stream payout to rights holders: Qobuz ~$0.015–0.019 · Tidal ~$0.013–0.015 · Apple ~$0.01 · Amazon ~$0.004 · Spotify ~$0.003–0.005 · YouTube ~$0.001–0.002. On Spotify, tracks under 1,000 plays/yr earn <b>$0</b>.</td><td class="marg">~100% royalty (DSP already kept ~30% before payout)</td></tr>
+            <tr class="item-row"><td class="item">Direct digital<br><span style="font-weight:400;color:var(--fg-faint);font-size:.8rem">Bandcamp / Gumroad</span></td><td>Bandcamp keeps <b>15% digital</b> (→10% after $5k in sales) / <b>10% physical</b>, + ~4–6% payment processing. <b>Bandcamp Fridays</b> (8 in 2026) waive the cut. Gumroad ≈15% all-in.</td><td class="marg">~80–85% · ~90–95% on Bandcamp Fridays</td></tr>
+            <tr class="item-row"><td class="item">Merch &amp; physical</td><td>Per-unit margins from the Merch table: CD / pin / poster / koozie 75–83%, vinyl 60–64%, apparel (POD) 47–68%. Sold direct or at shows you keep nearly all of it.</td><td class="marg">~50–83% per unit</td></tr>
+            <tr class="item-row"><td class="item">Live shows</td><td>Door: a guarantee ($100–500/night) or a 70–80% door split after venue costs. Merch at shows is the real earner — no platform fee, no shipping — minus fuel/lodging on the run.</td><td class="marg">Door ~70–80% · merch ~60–75% (before tour costs)</td></tr>
+            <tr class="item-row"><td class="item">Sync / licensing</td><td>You own masters + publishing = one-stop. Pitch <b>direct</b> and keep ~100%; via an <b>agency</b>, commission runs 25–50% (curated ~50/50, marketplaces ~75/25 to you).</td><td class="marg">~50–100% (highest pitching direct)</td></tr>
+            <tr class="item-row"><td class="item">Scouter the Game</td><td>Paid ~$5–10 + pay-what-you-want; you own the engine (no royalty). Steam keeps 30%, itch 0–10%. Soundtrack DLC + game/vinyl bundles stack on top (see the Game section).</td><td class="marg">~70% (Steam) · ~90%+ (itch)</td></tr>
+            <tr class="item-row"><td class="item">Publishing royalties</td><td>PRO (ASCAP/BMI) performance + MLC mechanicals + SoundExchange digital-performance, collected over time once registered. PRO / admin keeps ~10–15%.</td><td class="marg">~85–100%</td></tr>
+          </tbody>
+        </table></div>
+        <div class="note" style="margin-top:14px"><b>The takeaway:</b> streaming is discovery, not income — a single <b>Bandcamp LP sale nets more than ~5,000 Spotify streams</b>. The money is in direct sales, merch, and live, where you keep 50–95%.</div>
+
+        <div class="note" style="margin-top:16px">
+          <div style="font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;margin-bottom:8px">Caveats</div>
+          <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
+            <li>The projection is an <b>illustrative scenario, not a forecast</b> — your audience size, draw, and sell-through decide the real numbers.</li>
+            <li><b>Streaming income is negligible</b> at this scale — don't budget against it.</li>
+            <li><b>Merch + live carry the plan.</b> The main financial risk is slow physical sell-through — don't over-press vinyl (see Merch caveats).</li>
+            <li>Costs shift with run sizes and whether you hire PR / video help; the $7k DIY figure assumes you do the videos and press yourselves.</li>
+          </ul>
+        </div>
+        <div style="margin-top:14px;font-family:var(--mono);font-size:.66rem;letter-spacing:.04em;color:var(--fg-faint);line-height:1.7">
+          <div style="text-transform:uppercase;letter-spacing:.12em;color:var(--accent-ink);font-weight:700;margin-bottom:6px">Research sources</div>
+          <div>Per-stream payouts — <a href="https://dittomusic.com/en/blog/how-much-does-spotify-pay-per-stream" target="_blank" rel="noopener">Ditto Music</a> · <a href="https://resources.onestowatch.com/music-streaming-platforms-payouts-2026/" target="_blank" rel="noopener">Ones to Watch 2026</a></div>
+          <div>Bandcamp split &amp; Fridays — <a href="https://soundplate.com/bandcamp-fees-calculator/" target="_blank" rel="noopener">Soundplate</a> · <a href="https://www.digitalmusicnews.com/2026/02/11/bandcamp-friday-2026-raise-february/" target="_blank" rel="noopener">Digital Music News</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ACCORDION 6: LIVE & TOURING ============ -->
+    <div class="acc">
+      <button class="acc-btn" id="btn-live" aria-expanded="false" aria-controls="p-live">
+        <span class="acc-num">06</span><span class="acc-title">Live &amp; Touring</span>
+        <span class="acc-chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="acc-panel" id="p-live" role="region" aria-labelledby="btn-live">
+        <p class="mkt-intro" style="margin:0 0 14px">Playing live is usually the <b>#1 income</b> for a band at your level — and the single best place to sell physical merch (no platform fee, no shipping). But touring also loses money fast if you over-reach: the smart move is <b>regional, merch-forward runs built around the release</b>, not an unfunded national tour.</p>
+
+        <div class="pg-group">Deal structures</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>Guarantee</b> — a flat fee regardless of turnout; safest for you, hardest to land as a newcomer. Developing-artist guarantees run ~$100–500/night.</li>
+          <li><b>Door split</b> — usually 70–80% of ticket sales after the venue covers costs; your income = your draw.</li>
+          <li><b>Guarantee vs. door (whichever is greater)</b> — the deal to ask for: a floor with upside if the room fills.</li>
+          <li>Always get terms <b>in writing</b> — guarantee/split, load-in, set length, payout method — before you drive anywhere.</li>
+        </ul>
+
+        <div class="pg-group mt">What a show actually clears <small>2026 club-level ballparks</small></div>
+        <div class="merch-wrap"><table class="merch">
+          <thead><tr><th>Metric</th><th class="num">Figure</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr class="item-row"><td class="item">Merch spend per attendee</td><td class="num">$2–8</td><td>~15% buy something = planning baseline</td></tr>
+            <tr class="item-row"><td class="item">Merch share of touring income</td><td class="num">30–50%</td><td>merch, not the door, is the money</td></tr>
+            <tr class="item-row"><td class="item">Developing-artist guarantee</td><td class="num">$100–500</td><td>per night</td></tr>
+            <tr class="item-row"><td class="item">12 dates, ~500-cap rooms</td><td class="num">$4k–12k</td><td>total cleared (~$1–3k per date after costs)</td></tr>
+            <tr class="item-row"><td class="item">2-week regional run (2–3 people)</td><td class="num">$4k–7k</td><td>costs before income — fuel is the biggest line</td></tr>
+          </tbody>
+        </table></div>
+
+        <div class="pg-group mt">Release moment (Week 14)</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li>Hometown <b>release show / listening party</b> the week the album drops.</li>
+          <li><b>Livestream</b> it for remote fans who followed the 13-week run.</li>
+          <li>Sell a <b>show-exclusive</b> variant (the 7" or a color LP) to reward turnout — and capture email signups.</li>
+        </ul>
+
+        <div class="pg-group mt">Routing &amp; booking</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>Regional weekend runs</b> beat an unfunded full tour — fuel &amp; lodging are your biggest costs; lean on fan/promoter hospitality.</li>
+          <li>Chase <b>support slots</b> on touring psych / stoner / garage acts — a good one builds a career; vet them, since a bad one is $250, a half-empty room, and five shirts sold.</li>
+          <li>DIY venues, bars, house shows, and <b>record-store in-stores</b>; submit to psych / desert-rock festivals.</li>
+          <li>Pair with other <b>Desert Fuzz</b> / local bands to split the draw and the costs.</li>
+          <li><b>The booking pitch:</b> who you are, your draw, streaming numbers, a recent live video, and a proposed date — short and specific to the booker.</li>
+        </ul>
+
+        <div class="pg-group mt">Merch &amp; money at shows</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li>Shows are the <b>highest-margin</b> merch channel — bring the full table (tour tees sell $30–40, plus vinyl/7", pins, stickers).</li>
+          <li>Take cash <b>and</b> tap-to-pay (Square) — a reader pays for itself in one night.</li>
+          <li><b>Capture email signups</b> at the table — the audience you actually own.</li>
+          <li>Set up a <b>playable game station</b> (FPS + racing) at the merch table or release show — demo it live, hand out keys, and drive Steam wishlists.</li>
+          <li>Register your setlists with your <b>PRO</b> so live performance royalties get paid.</li>
+        </ul>
+
+        <div class="pg-group mt">The plan</div>
+        <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>1 ·</b> Book a hometown <b>release show + livestream</b> for Week 14; press a show-exclusive variant.</li>
+          <li><b>2 ·</b> Line up <b>1–2 regional weekend runs</b> after release; target guarantee-vs-door deals.</li>
+          <li><b>3 ·</b> Pitch <b>support slots</b> on any touring psych/stoner act routing through your region.</li>
+          <li><b>4 ·</b> Bring a <b>merch-forward table</b> to every date; take tap-to-pay; collect emails.</li>
+          <li><b>5 ·</b> Keep the books: terms in writing, log merch per show, register setlists for royalties.</li>
+        </ul>
+
+        <div class="note" style="margin-top:20px">
+          <div style="font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;margin-bottom:8px">Caveats</div>
+          <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
+            <li>Most small tours <b>lose money on paper</b> — treat live as merch sales + fanbase building, not door income.</li>
+            <li>Guarantees haven't kept pace with fuel/lodging: a $2k guarantee at a 300-cap room that once netted $800–1,200 now leaves ~$500–900.</li>
+            <li>Your <b>draw drives everything</b> — book regionally where you can reliably put heads in the room before reaching further out.</li>
+            <li>Figures are 2026 club-level ballparks; confirm each deal in writing before committing.</li>
+          </ul>
+        </div>
+        <div style="margin-top:14px;font-family:var(--mono);font-size:.66rem;letter-spacing:.04em;color:var(--fg-faint);line-height:1.7">
+          <div style="text-transform:uppercase;letter-spacing:.12em;color:var(--accent-ink);font-weight:700;margin-bottom:6px">Research sources</div>
+          <div>Booking &amp; deals — <a href="https://awards-for-creators.com/blog/independent-artist-tour-booking-guide" target="_blank" rel="noopener">Tour Booking Guide 2026</a> · <a href="https://www.chartlex.com/blog/touring/how-to-book-your-first-tour-independent-artist-guide" target="_blank" rel="noopener">Chartlex</a></div>
+          <div>Touring economics — <a href="https://notnoise.co/blog/indie-tour-budget" target="_blank" rel="noopener">NotNoise: real math of a tour</a> · <a href="https://www.chartlex.com/blog/money/touring-economics-what-artists-actually-clear-2026" target="_blank" rel="noopener">Chartlex economics</a></div>
+          <div>Merch on the road — <a href="https://www.chartlex.com/blog/touring/tour-merch-strategy-what-sells-2026" target="_blank" rel="noopener">Tour merch strategy 2026</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ACCORDION 7: SYNC & LICENSING ============ -->
+    <div class="acc">
+      <button class="acc-btn" id="btn-sync" aria-expanded="false" aria-controls="p-sync">
+        <span class="acc-num">07</span><span class="acc-title">Sync &amp; Licensing</span>
+        <span class="acc-chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="acc-panel" id="p-sync" role="region" aria-labelledby="btn-sync">
+        <p class="mkt-intro" style="margin:0 0 14px">A sync placement (music timed to picture — film, TV, games, trailers, ads) is pure upside: <b>one placement can dwarf a year of streaming</b>. Every placement needs two licenses — the <b>master</b> (the recording) and the <b>sync</b> (the composition). Because you write and record your own material, you control both and can license as a <b>one-stop</b> — the single biggest advantage an indie has, since a supervisor clears the whole song with one signature and no label/publisher back-and-forth.</p>
+
+        <div class="pg-group">The opportunity</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>One-stop = fast yes.</b> You can quote and clear in a day — supervisors on deadline love that.</li>
+          <li><b>Stay non-exclusive</b> by default (license the same track to many productions); only grant exclusivity for a premium — national ads usually require it.</li>
+          <li><b>Unbundle the deal:</b> term (how long), territory (one country vs. worldwide), media (festival-only vs. all-media), and exclusivity are separate levers — price each rather than one flat number.</li>
+          <li>A placement pays up to <b>three ways</b>: the upfront sync fee, performance royalties when it airs (via your PRO), and sometimes library/blanket income.</li>
+        </ul>
+
+        <div class="pg-group mt">What a placement pays <small>2026 upfront-fee ranges</small></div>
+        <div class="merch-wrap"><table class="merch">
+          <thead><tr><th>Placement</th><th class="num">Typical upfront</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr class="item-row"><td class="item">Mobile / casual game</td><td class="num">$0–7.5k</td><td>volume play; easy entry</td></tr>
+            <tr class="item-row"><td class="item">Indie video game</td><td class="num">$500–15k</td><td>great first placements</td></tr>
+            <tr class="item-row"><td class="item">Streaming series (Netflix/Hulu/AppleTV+)</td><td class="num">$2.5k–15k</td><td>+ smaller backend royalties</td></tr>
+            <tr class="item-row"><td class="item">Network TV drama</td><td class="num">$5k–30k</td><td>+ performance royalties (best backend)</td></tr>
+            <tr class="item-row"><td class="item">Indie film</td><td class="num">$5k–25k</td><td>festival vs all-media affects price</td></tr>
+            <tr class="item-row"><td class="item">Trailer (indie → major)</td><td class="num">$1k–50k+</td><td>huge exposure; premium rates</td></tr>
+            <tr class="item-row"><td class="item">AAA video game</td><td class="num">$15k–150k+</td><td>marquee placements</td></tr>
+            <tr class="item-row"><td class="item">National ad (one-time)</td><td class="num">$20k–200k+</td><td>no backend; exclusivity premium; global brands $100k–250k+</td></tr>
+          </tbody>
+        </table></div>
+        <div class="note" style="margin-top:14px">Realistic first placements for an act your size cluster in the <b>$500–$5k</b> range (indie games, indie film, streaming background) — small checks that build credits and relationships, which is what unlocks the bigger ones.</div>
+
+        <div class="pg-group mt">Your catalog → where it fits</div>
+        <div class="merch-wrap"><table class="merch">
+          <thead><tr><th>Your sound</th><th>Lands in</th></tr></thead>
+          <tbody>
+            <tr class="cat"><td colspan="2">★ Priority — the most placeable thing you have</td></tr>
+            <tr class="item-row"><td class="item">Acoustic guitar + vocal (1 track)</td><td>Emotional TV moments, film montages, indie-film needle-drops, "heartfelt" ad beats, singer-songwriter cues. Stripped, lyric-forward solo material is the <b>single most-licensed texture</b> — prep this first.</td></tr>
+            <tr class="cat"><td colspan="2">Band tracks</td></tr>
+            <tr class="item-row"><td class="item">Psych rock</td><td>Sci-fi / space scenes, trailers, dream / altered-state sequences, fashion &amp; tech ads, games. The <b>"Time Traveler" concept is a built-in sci-fi hook</b>.</td></tr>
+            <tr class="item-row"><td class="item">Garage rock</td><td>Car &amp; energy-drink ads, sports montages, action beats, skate / racing games, youthful trailers.</td></tr>
+            <tr class="item-row"><td class="item">Dad rock</td><td>Nostalgic / feel-good scenes, road-trip &amp; coming-of-age montages, beer / truck / car ads, sports broadcasts, Gen-X-targeted spots. A big radio-friendly hook is easy to drop under picture.</td></tr>
+            <tr class="item-row"><td class="item">Blues</td><td>Crime &amp; Western drama, whiskey / bourbon ads, gritty documentary, period pieces.</td></tr>
+            <tr class="item-row"><td class="item">Country / punk (1 track)</td><td>Westerns, road-trip scenes, underdog / rebel moments, truck ads.</td></tr>
+          </tbody>
+        </table></div>
+
+        <div class="pg-group mt">Get sync-ready <small>what supervisors actually need</small></div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>Broadcast-quality files:</b> 24-bit / <b>48 kHz WAV</b> (post works at 48k — delivering 44.1k forces a resample some facilities reject).</li>
+          <li><b>A clean instrumental</b> of every track (also broadcast quality) — many cues drop vocals under dialogue.</li>
+          <li><b>Stems</b> (drums / bass / gtr / vox), same sample rate + length, aligned to the same start, named consistently — increasingly requested.</li>
+          <li><b>Alt edits:</b> 30s and 60s cuts, short-intro, no-leads, and a clean (no-profanity) version where needed.</li>
+          <li><b>Full metadata per track:</b> mood, genre, tempo (BPM), key, instruments, searchable lyrics, "sounds-like" reference artists, alt-version flags, and one-stop/contact info.</li>
+          <li>Keep a <b>private, streamable catalog</b> (one link) + a one-sheet per priority track.</li>
+        </ul>
+
+        <div class="pg-group mt">Where to pitch <small>platform status changes — verify before relying on any</small></div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>Open to new artists now:</b> Pond5, CD Baby Sync, DistroKid's YouTube Creator Music, Audiosocket. Musicbed still reviews submissions but accepts &lt;1%.</li>
+          <li><b>Currently paused / closed:</b> Artlist, Epidemic Sound, Marmoset, Music Vine, Soundstripe. <b>Songtradr's marketplace shuts down Sept 1, 2026</b> — don't build on it.</li>
+          <li><b>Forwarding / admin routes:</b> TAXI (A&amp;R forwarding to briefs), Sentric (publishing admin to collect worldwide).</li>
+          <li><b>Direct DIY (highest value):</b> build a targeted list of <b>20–30 music supervisors</b>, study their past placements, and send personalized pitches — never a mass blast.</li>
+        </ul>
+
+        <div class="pg-group mt">The plan</div>
+        <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>1 · Prep the priority cuts</b> — the acoustic track first, then the strongest psych and garage songs: WAV/instrumental/stems/alt-edits + metadata + one-sheet.</li>
+          <li><b>2 · Lock the rights plumbing</b> — PRO + MLC + SoundExchange registered (see Registrations) so you're a clean one-stop and any placement's royalties get collected.</li>
+          <li><b>3 · Go passive-broad</b> — load the catalog onto open platforms (CD Baby Sync / DistroKid Creator Music / Pond5, Audiosocket non-exclusive) for volume while you focus elsewhere.</li>
+          <li><b>4 · Go targeted-direct</b> — pitch the acoustic + psych tracks to your 20–30 supervisor list with tailored emails; lean on the one-stop + fast-clear angle.</li>
+          <li><b>5 · Attempt one curated library</b> — submit to Musicbed / Audiosocket ASX for the credibility of a curated roster.</li>
+          <li><b>6 · Track &amp; collect</b> — log every placement, file cue sheets, and confirm PRO/SoundExchange are paying the backend.</li>
+        </ul>
+
+        <div class="note" style="margin-top:20px">
+          <div style="font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;margin-bottom:8px">Caveats</div>
+          <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
+            <li>Sync is <b>slow and unpredictable</b> — placements can take months or years, and most pitches go nowhere. Treat it as long-tail upside, not campaign income.</li>
+            <li>Fee ranges are <b>upfront ballparks</b> that swing hard on prominence (background vs. featured), term, territory, and exclusivity — they're negotiating context, not quotes.</li>
+            <li><b>Platform status changes fast</b> — the open/closed list is a 2026 snapshot (and Songtradr's marketplace closes Sept 1, 2026). Verify before investing time in any one platform.</li>
+            <li><b>Read exclusivity carefully</b> — a national-ad exclusive can lock a track out of all other placements for years; unbundle and price it.</li>
+            <li>Watch for <b>rights grabs</b>: some libraries take publishing or exclusive control. Keep it non-exclusive and retain your copyrights unless the check justifies otherwise.</li>
+          </ul>
+        </div>
+        <div style="margin-top:14px;font-family:var(--mono);font-size:.66rem;letter-spacing:.04em;color:var(--fg-faint);line-height:1.7">
+          <div style="text-transform:uppercase;letter-spacing:.12em;color:var(--accent-ink);font-weight:700;margin-bottom:6px">Research sources</div>
+          <div>How sync works / one-stop — <a href="https://www.artist.tools/post/music-sync-licensing" target="_blank" rel="noopener">Artist.tools</a> · <a href="https://notnoise.co/blog/sync-licensing-for-musicians" target="_blank" rel="noopener">NotNoise</a></div>
+          <div>Fee ranges — <a href="https://www.chartlex.com/blog/business/sync-licensing-rate-card-2026" target="_blank" rel="noopener">Chartlex rate card 2026</a> · <a href="https://www.blakmarigold.com/blog/how-much-do-sync-placements-pay-2026" target="_blank" rel="noopener">Blak Marigold</a></div>
+          <div>Platforms &amp; submission status — <a href="https://getmorestreams.com/best-sync-licensing-companies-for-independent-artists/" target="_blank" rel="noopener">GetMoreStreams</a> · <a href="https://theplayground.co.uk/10-sync-agencies-every-independent-artist-should-know-in-2026/" target="_blank" rel="noopener">PLAYY</a></div>
+          <div>Delivery &amp; metadata — <a href="https://www.blakmarigold.com/blog/what-files-do-music-supervisors-actually-need-sync-delivery-guide" target="_blank" rel="noopener">Sync delivery guide</a> · <a href="https://dropcue.app/blog/music-metadata-best-practices-sync" target="_blank" rel="noopener">DropCue metadata</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ACCORDION 8: PRESS & RADIO ============ -->
+    <div class="acc">
+      <button class="acc-btn" id="btn-press" aria-expanded="false" aria-controls="p-press">
+        <span class="acc-num">08</span><span class="acc-title">Press &amp; Radio</span>
+        <span class="acc-chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="acc-panel" id="p-press" role="region" aria-labelledby="btn-press">
+        <p class="mkt-intro" style="margin:0 0 14px">Garage / psych / blues / dad rock lives on <b>blogs, specialty + college radio, AAA / classic-rock-adjacent radio, and playlists</b> — not mainstream press. DIY-pitch the weekly singles yourself, then concentrate budget (and any publicist) on the finale + album.</p>
+
+        <div class="pg-group">What PR costs <small>2026</small></div>
+        <div class="merch-wrap"><table class="merch">
+          <thead><tr><th>Option</th><th class="num">Cost</th><th>What it gets you</th></tr></thead>
+          <tbody>
+            <tr class="item-row"><td class="item">DIY outreach</td><td class="num">$0</td><td>your time; workable for the weekly singles</td></tr>
+            <tr class="item-row"><td class="item">Boutique blog campaign</td><td class="num">$300–500/mo</td><td>~3–8 legit blog placements / month</td></tr>
+            <tr class="item-row"><td class="item">Entry single campaign</td><td class="num">$500–2k</td><td>blogs + small pubs + playlist curators</td></tr>
+            <tr class="item-row"><td class="item">Mid album campaign</td><td class="num">$2k–5k</td><td>established pubs + radio + playlists + interviews</td></tr>
+            <tr class="item-row"><td class="item">Full retainer</td><td class="num">$2k–10k/mo</td><td>full service — overkill at this stage</td></tr>
+          </tbody>
+        </table></div>
+        <div class="note" style="margin-top:14px"><b>Recommendation:</b> DIY the 13 singles; put a <b>boutique or entry-level publicist only on the finale + album window</b> if budget allows (see Budget).</div>
+
+        <div class="pg-group mt">EPK &amp; assets</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li>Keep the <b>EPK</b> current: short + long bio, hi-res photos, single/album art, streaming + social links, press quotes, contact + one-stop note.</li>
+          <li>Prep <b>embargoed assets per single</b> so premieres can post the moment it drops.</li>
+        </ul>
+
+        <div class="pg-group mt">Blogs &amp; press</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li>Target genre outlets: Doomed Nation, The Sludgelord, Outlaws of the Sun, Fuzzy Cracklins, Doomed &amp; Stoned.</li>
+          <li>Offer <b>premieres / exclusives</b> (a video or visualizer) with a set embargo date.</li>
+          <li><b>Personalized pitch only</b> — short, specific, name the writer; never a mass blast.</li>
+          <li>Concentrate the coordinated push on the <b>mid-run video (Wk 5)</b> and the <b>finale + album</b>.</li>
+          <li>Pitch the <b>"a band built its own game"</b> angle to <b>indie-game press + streamers</b> alongside music press — a genuine hook few artists have (see the Game section).</li>
+        </ul>
+
+        <div class="pg-group mt">Radio — college &amp; community</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>College + community radio</b> is the accessible entry — genre-aware, built for discovery, and open to unsigned artists.</li>
+          <li>Aim to chart on the <b>NACC</b> (North American College &amp; Community chart) — weekly adds/spins that carry real weight with press, bookers, and bigger stations.</li>
+          <li>Find stations already spinning your genre; get the <b>music director by name</b>; send a short, specific pitch + a direct link. Mail <b>physical early</b> where you can.</li>
+          <li>Target specialty <b>psych / stoner / metal shows</b> plus <b>AAA / classic-rock formats</b> for the dad-rock material; online genre stations and podcasts.</li>
+        </ul>
+
+        <div class="pg-group mt">Playlists &amp; pitching tools</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>SubmitHub / Groover</b> — $1–3 per pitch; ~$40–80 buys 25–50 targeted submissions. Don't exceed ~$100/batch (dilutes focus).</li>
+          <li><b>Spotify editorial</b> — pitch via Spotify for Artists <b>4+ weeks ahead</b> of each single.</li>
+          <li>Managed (PlaylistPush-type) — $450–1k+ per campaign; optional.</li>
+          <li>Combining curator pitching <b>with algorithmic</b> (Discovery/Radio) converts ~2.3× more followers than submissions alone.</li>
+        </ul>
+
+        <div class="pg-group mt">The plan</div>
+        <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>1 ·</b> Lock the <b>EPK</b> before Week 1; prep embargoed assets per single.</li>
+          <li><b>2 ·</b> DIY-pitch every single: 1–2 target blogs + college/community radio MDs + a small SubmitHub/Groover batch + Spotify editorial 4 wks ahead.</li>
+          <li><b>3 ·</b> Run a <b>NACC-tracked college-radio campaign</b> around the album; mail physical early.</li>
+          <li><b>4 ·</b> Concentrate the big coordinated push — and an <b>entry/boutique publicist</b> if budget allows — on the finale (Wk 13) + album (Wk 14).</li>
+          <li><b>5 ·</b> Log coverage + radio adds; feed proof (chart position, quotes) into the next round of pitches.</li>
+        </ul>
+
+        <div class="note" style="margin-top:20px">
+          <div style="font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;margin-bottom:8px">Caveats</div>
+          <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
+            <li>Coverage rarely moves streams directly — its real value is <b>credibility, SEO, and quotes</b> that unlock bookings and bigger press later.</li>
+            <li><b>Vet everything:</b> "guaranteed placement" PR/playlist services are often bots or pay-to-post with no real audience. SubmitHub/Groover are pay-<i>per-pitch</i>, not pay-for-placement.</li>
+            <li><b>Rush campaigns</b> (&lt;3 weeks lead) cost more and land less — pitch 4+ weeks ahead.</li>
+            <li>Publicist quality varies wildly — check a publicist's actual placement history <b>in your genre</b> before paying. Costs are 2026 ballparks.</li>
+          </ul>
+        </div>
+        <div style="margin-top:14px;font-family:var(--mono);font-size:.66rem;letter-spacing:.04em;color:var(--fg-faint);line-height:1.7">
+          <div style="text-transform:uppercase;letter-spacing:.12em;color:var(--accent-ink);font-weight:700;margin-bottom:6px">Research sources</div>
+          <div>PR costs — <a href="https://amworldgroup.com/pricing/music-pr-cost" target="_blank" rel="noopener">AMW PR pricing 2026</a> · <a href="https://cyberprmusic.com/find-music-publicist-2/" target="_blank" rel="noopener">Cyber PR</a></div>
+          <div>College radio &amp; NACC — <a href="https://www.planetarygroup.com/how-to-get-song-listed-nacc-college-community-radio-chart/" target="_blank" rel="noopener">Planetary Group</a> · <a href="https://blog.symphonic.com/2026/09/24/radio-promotion-for-independent-artists/" target="_blank" rel="noopener">Symphonic radio guide</a></div>
+          <div>Playlist pitching — <a href="https://www.musicpulse.app/blog/is-submithub-still-worth-it-in-2026-an-honest-review" target="_blank" rel="noopener">SubmitHub review 2026</a> · <a href="https://www.chartlex.com/blog/marketing/spotify-playlist-submission-services-worth-it" target="_blank" rel="noopener">Chartlex</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ACCORDION 9: SCOUTER THE GAME ============ -->
+    <div class="acc">
+      <button class="acc-btn" id="btn-game" aria-expanded="false" aria-controls="p-game">
+        <span class="acc-num">09</span><span class="acc-title">Scouter the Game</span>
+        <span class="acc-chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="acc-panel" id="p-game" role="region" aria-labelledby="btn-game">
+        <p class="mkt-intro" style="margin:0 0 14px">A self-built game — <b>first-person shooter + racing modes</b>, crude-by-design — is a rare hook that most bands can't touch. Two structural advantages make it real: the <b>album is the soundtrack</b> (game and record cross-sell each other), and you <b>own the engine</b> (no engine royalties, full control, ~100% of what a store leaves you). Treat it as a marketing asset for the band that can also turn a profit — and lean into the janky charm on purpose; it's a bit, not an apology.</p>
+
+        <div class="pg-group">Where to release &amp; the economics</div>
+        <div class="merch-wrap"><table class="merch">
+          <thead><tr><th>Platform</th><th class="num">Their cut / fees</th><th>Best for</th></tr></thead>
+          <tbody>
+            <tr class="item-row"><td class="item">itch.io</td><td class="num">0–10% (you set it) + ~3% proc.</td><td>Free to publish · <b>pay-what-you-want</b> (buyers average ~30% over the minimum) · demo/beta &amp; the core fanbase</td></tr>
+            <tr class="item-row"><td class="item">Steam</td><td class="num">30% + $100 fee</td><td>Biggest audience + <b>wishlists</b>; the $100 Steam Direct fee is refunded after $1k sales · the commercial launch</td></tr>
+            <tr class="item-row"><td class="item">Direct / Bandcamp bundle</td><td class="num">~10–15%</td><td>Sell a game key + vinyl/7" bundle straight to fans</td></tr>
+            <tr class="item-row"><td class="item">Console (later)</td><td class="num">30% + approval</td><td>Optional down the line; more overhead — not for launch</td></tr>
+          </tbody>
+        </table></div>
+        <div class="note" style="margin-top:14px"><b>Play it in order:</b> launch on <b>itch.io first</b> (pay-what-you-want, build the audience, gather feedback), then bring the polished build to <b>Steam</b> for the commercial launch and wishlist reach.</div>
+
+        <div class="pg-group mt">The band × game flywheel</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>One audience, two products:</b> the game markets the album and the album markets the game — every game sale can carry the music, every listener is a potential player.</li>
+          <li><b>The album is the score</b> — each of the 13 songs can soundtrack a level, race, or mode; it makes the record a <i>playable</i> extension of the "Time Traveler" world.</li>
+          <li><b>You own the engine</b> — no Unreal 5% / Unity runtime cut; full margin, full control, and freedom to ship a free demo or PWYW build.</li>
+          <li><b>Two modes = two content angles</b> — FPS clips and racing clips are separate trailer hooks and separate streamer bait.</li>
+          <li><b>Janky charm is a genre</b> — streamers actively hunt crude/weird indie games; the rough aesthetic is a feature to market, not hide.</li>
+        </ul>
+
+        <div class="pg-group mt">How it makes money</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>Paid on Steam</b> (~$5–10 for a short/crude game) + <b>pay-what-you-want on itch</b> (fans routinely pay above the minimum).</li>
+          <li><b>Sell the soundtrack twice:</b> the album as a Steam <b>Soundtrack DLC</b> and on Bandcamp — one asset, two stores.</li>
+          <li><b>Bundles:</b> game key + 7"/vinyl, or game + digital album — lifts average order value (see Merch).</li>
+          <li><b>Free demo → wishlist → launch;</b> optional cosmetic skins for extra spend.</li>
+          <li><b>Own-engine margin:</b> you keep ~70% (Steam) to ~90%+ (itch) of price with no engine royalty. Rough math — <b>1,000 copies × $6 × 70% ≈ $4,200</b> on Steam; itch nets more per sale.</li>
+        </ul>
+
+        <div class="pg-group mt">Marketing the game</div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>Stand up the Steam page 6+ months early</b> and farm <b>wishlists</b> — target 5–10k minimum (quality &gt; quantity). Wishlists + community, not the storefront, decide launch week.</li>
+          <li><b>Steam Next Fest</b> is the single highest-leverage free event — needs a playable demo + store page + a release date after the fest; good demos convert 12–32% of pageviews to wishlists.</li>
+          <li><b>Short-form devlogs + gameplay clips, 3–5×/week</b> — crude FPS + racing footage is clip- and stream-friendly; devlogs are the highest-ROI content you can make.</li>
+          <li><b>Micro-influencer / streamer outreach</b> (10k–100k followers = best ROI) with free keys + a press kit; "janky games" are a streaming niche of their own.</li>
+          <li><b>"Paid organic" on TikTok:</b> post, find the winner in 24–48h, boost with Spark Ads — ~$1–10 per wishlist vs. $25–167 for cold ads.</li>
+          <li><b>Reddit</b> (r/IndieGaming, r/itchio, FPS/racing subs) for reach + a <b>Discord</b> to retain the community.</li>
+        </ul>
+
+        <div class="pg-group mt">The plan <small>tie it to the album campaign</small></div>
+        <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><b>1 · Foundation</b> — stand up the Steam page (start wishlists) + an itch.io page; begin banking devlog clips.</li>
+          <li><b>2 · During the 13-week run</b> — fold devlog + gameplay clips into the weekly <b>Process content</b> (Stream A) so the game becomes part of the story.</li>
+          <li><b>3 · Demo</b> — ship a playable demo on itch and enter the next <b>Steam Next Fest</b>.</li>
+          <li><b>4 · Outreach</b> — send keys + press kit to streamers/press ahead of launch.</li>
+          <li><b>5 · Launch after the album</b> — bundle game + vinyl/7"; ship the album as the in-game soundtrack (Steam DLC + Bandcamp).</li>
+          <li><b>6 · Long tail</b> — keep PWYW on itch to convert the fanbase; patch and iterate from feedback.</li>
+        </ul>
+
+        <div class="note" style="margin-top:20px">
+          <div style="font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;margin-bottom:8px">Caveats</div>
+          <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px">
+            <li>Most indie games earn <b>very little</b> — the median Steam title makes a few hundred to low thousands. Treat this as a <b>marketing + creative asset first</b>, profit second.</li>
+            <li><b>A cold launch dies.</b> Wishlists, a demo, and a community built months ahead determine week-one — not release-day activity.</li>
+            <li><b>Scope kills indie games.</b> Two modes is already ambitious — ship small and rough on purpose rather than chasing polish forever.</li>
+            <li>"Crude" cuts both ways — commit to the aesthetic as a deliberate style; half-finished-by-accident reads differently than janky-on-purpose.</li>
+            <li>Owning the engine means <b>no royalties but no safety net</b> — no engine support/community, so more of the debugging is on you.</li>
+            <li>Store discovery is brutal and figures are 2026 ballparks — the band's built-in audience is your unfair advantage; use it.</li>
+          </ul>
+        </div>
+        <div style="margin-top:14px;font-family:var(--mono);font-size:.66rem;letter-spacing:.04em;color:var(--fg-faint);line-height:1.7">
+          <div style="text-transform:uppercase;letter-spacing:.12em;color:var(--accent-ink);font-weight:700;margin-bottom:6px">Research sources</div>
+          <div>Platforms &amp; revenue — <a href="https://fungies.io/steam-revenue-share-explained/" target="_blank" rel="noopener">Steam revenue share 2026</a> · <a href="https://generalistprogrammer.com/tutorials/how-to-make-money-on-itchio-indie-game-guide" target="_blank" rel="noopener">itch.io revenue guide</a></div>
+          <div>Wishlists &amp; Next Fest — <a href="https://www.strayspark.studio/blog/steam-next-fest-demo-optimization-wishlists" target="_blank" rel="noopener">StraySpark</a> · <a href="https://www.immutable.com/guides/how-to-market-an-indie-game" target="_blank" rel="noopener">Immutable Steam plan</a></div>
+          <div>Marketing &amp; short-form — <a href="https://fungies.io/how-to-market-indie-game/" target="_blank" rel="noopener">Fungies marketing guide</a> · <a href="https://gamosy.com/blog/tiktok-game-marketing" target="_blank" rel="noopener">TikTok for indie devs</a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer>Working release plan · Draft v1 · Week-based schedule (start week TBC)</footer>
+
+<script>
+(function(){
+  /* ================= SINGLE DATA MODEL ================= */
+  /* Edit SINGLES / ALBUM below — the timeline, detail panels, registration
+     matrix, and both marketing streams all render from this. */
+
+  // shared per-phase Format / Channel / Specs for every single (Stream B)
+  var SB_TPL={
+    pre:{f:`2× teaser reels, cover-reveal graphic, pre-save link, visualizer.`,
+         c:`Reels · TikTok · IG Stories/feed · Spotify/Apple editorial · pre-save platform.`,
+         s:`Teasers 1080×1920 (9:16) ≤15s, captions; cover art 3000×3000 (DSP requirement); pre-save live T–2.`},
+    rel:{f:`Audio release + video/visualizer, feed + Story posts, email.`,
+         c:`All DSPs · YouTube · IG/TikTok · email.`,
+         s:`Spotify Canvas 1080×1920 (9:16) 3–8s loop; YouTube 1920×1080 (16:9) + 1280×720 thumb; email ~600px body.`},
+    post:{f:`3× short-form cuts, Story reshares, paid ad creative.`,
+         c:`Reels · TikTok · IG Stories · Meta/TikTok Ads.`,
+         s:`Clips 9:16 1080×1920 ≤15s; ad variants 1:1 (1080×1080) & 4:5 (1080×1350); credit creators on reshares.`}
+  };
+
+  var SINGLES=[
+    { title:`Broken Hearted`, rt:`1:59`, week:1,
+      reg:[`<b>SPLIT</b> signed for all writers on the record`,`<b>ISRC</b> + <b>UPC</b> assigned; <b>DIST</b> delivered T–4`,`<b>PRO</b> + <b>MLC</b> work registration filed`,`<b>SX</b> catalog live; ISRC added`,`<b>CID</b> asset registered; <b>PRESAVE</b> link live (T–2)`,`<b>CR</b> PA+SR filing #1 (batch #01–#04)`],
+      mkt:[`Run the standard weekly engine`,`<b>Campaign launch announce:</b> "13 weeks. 13 singles. It begins in Week 1."`,`Meta/TikTok awareness ad — biggest week; set the audience pixels`,`Press release to the stoner/desert-rock blog list (Doomed Nation, Fuzzy Cracklins, The Sludgelord, Outlaws of the Sun)`,`Spotify editorial pitch flagged as <b>album lead single</b>`],
+      rel:[`Single <b>"Broken Hearted"</b> live on all DSPs`,`Newsletter · cross-post IG/TikTok/YouTube · update bio links`],
+      hook:`Campaign trailer: a studio / live clip cut to the hook. Pin it across all profiles as the intro to the whole run.`,
+      process:{name:`"It begins" — launch trailer`,content:`<b>Launch trailer</b> announcing "13 weeks, 13 singles" — fast montage + text hook.`,format:`Vertical video, 15–30s, sound-on.`,channel:`Instagram Reels · TikTok · YouTube Shorts (pin to profiles).`,specs:`1080×1920 (9:16), MP4/H.264, ≤30s, burned-in captions; keep text inside the center ~1080×1420 UI-safe zone.`},
+      sb:{pre:`Launch the whole run — cover reveal + "13-in-13 begins" teaser; lead-single pre-save.`,rel:`Single live + campaign-trailer video; pin as the intro to the run.`,post:`Cut the hook 3 ways; biggest paid push of the campaign (set the audience pixels).`} },
+
+    { title:`Where the Cold Wind Blows`, rt:`2:10`, week:2,
+      reg:[`<b>SPLIT</b> confirmed; <b>ISRC</b>/<b>UPC</b> assigned`,`<b>DIST</b> delivered T–4; <b>PRESAVE</b> live T–2`,`<b>PRO</b> + <b>MLC</b> filed`,`<b>SX</b> ISRC added; <b>CID</b> asset registered`,`<b>CR</b> in batch #1 (with #01)`],
+      mkt:[`Run the standard weekly engine`,`Atmospheric <b>visualizer</b> using desert / wind imagery (YouTube + Canvas)`,`"Continue the run" post linking #01 → #02 (retain week-1 audience)`,`Retarget ad to everyone who watched an #01 clip`,`Pitch indie playlist curators via SubmitHub / Groover`],
+      rel:[`Single <b>"Where the Cold Wind Blows"</b> live on all DSPs`,`Newsletter · cross-post`],
+      hook:`Tease the link from #01 to #02 — an "if you liked last week…" clip. Sells the week-to-week cadence.`,
+      process:{name:`"Continue the run" — keep-going post`,content:`"If you liked #01…" bridge into #02 — chorus clip + follow CTA.`,format:`Vertical short-form clip, 7–15s.`,channel:`Reels · TikTok.`,specs:`1080×1920 (9:16), hook in the first 1s, captions on; ≤15s for completion rate.`},
+      sb:{pre:`Atmospheric desert/wind teaser; "continue the run #01 → #02" bridge.`,rel:`Single live + atmospheric visualizer; retarget week-1 viewers.`,post:`Short-form cuts; indie playlist follow-ups (SubmitHub / Groover).`} },
+
+    { title:`Ain't Even Tryin`, rt:`2:36`, week:3,
+      reg:[`<b>SPLIT</b>; <b>ISRC</b>/<b>UPC</b>; <b>DIST</b> T–4`,`<b>PRO</b> + <b>MLC</b> filed; <b>PRESAVE</b> T–2`,`<b>SX</b> added; <b>CID</b> registered`,`<b>CR</b> in batch #1 (#01–#04)`],
+      mkt:[`Run the standard weekly engine`,`Lead a <b>title-driven Reel/TikTok</b> around the "ain't even tryin" hook; seed 5–10 micro-creators`,`First long-form: a short "making of / behind the songs" clip`,`Pitch a feature/premiere to one target blog`,`Reddit engagement in r/stonerrock, r/desertrock (share, don't spam)`],
+      rel:[`Single <b>"Ain't Even Tryin"</b> live on all DSPs`,`Newsletter · cross-post · pull a lyric card for the grid`],
+      hook:`Lean into the title as a caption — creators duet "ain't even tryin" clips. Easy, repeatable, and it travels.`,
+      process:{name:`Behind-the-songs / community bait`,content:`Behind-the-songs clip + a question/poll sticker to bait comments.`,format:`Vertical video + IG Story with question sticker.`,channel:`TikTok · Reels · IG Stories.`,specs:`Video 1080×1920 (9:16); Stories 1080×1920 — place stickers in the center (avoid top/bottom ~250px).`},
+      sb:{pre:`Title-driven teaser around the "ain't even tryin" hook; seed 5–10 micro-creators.`,rel:`Single live + lyric card; first behind-the-songs clip.`,post:`Duet / caption-trend cuts; Reddit share in r/stonerrock, r/desertrock.`} },
+
+    { title:`Time Traveler`, rt:`2:54`, week:4, pill:true, hol:true, tlFlag:`title track`, dhFlag:`Holiday week`,
+      reg:[`<b>SPLIT</b>; <b>ISRC</b>/<b>UPC</b>; <b>DIST</b> T–4 (upload early — holiday)`,`<b>PRO</b> + <b>MLC</b> filed; <b>PRESAVE</b> T–2`,`<b>SX</b> added; <b>CID</b> registered`,`<b>CR</b> batch #1 filed this week (#01–#04)`],
+      mkt:[`Run the engine, but <b>schedule everything early</b> before the holiday`,`Finish the <b>title-track music video</b> — the project's centerpiece`,`"The song we named it all after" story + first-month recap reel`,`<b>Black Friday</b> merch / pre-order push`],
+      rel:[`Single <b>"Time Traveler"</b> live on all DSPs`,`<b>Title-track video premiere</b> · add #01–#04 to the official playlist · newsletter`],
+      hook:`The title-track video is the campaign's centerpiece — the clearest "what this band is" statement. Worth the spend even on a holiday week.`,
+      process:{name:`One-month recap (title track lands)`,content:`One-month recap montage (four covers/clips) timed to the title-track drop.`,format:`Vertical recap video + IG feed carousel of the 4 singles.`,channel:`Reels · TikTok · Instagram carousel.`,specs:`Video 9:16 1080×1920; carousel 1080×1350 (4:5), up to 10 slides, JPG/PNG, consistent template.`},
+      sb:{pre:`Title-track video build; "the song we named it after"; Black Friday pre-order (holiday — schedule early).`,rel:`Single live + title-track video premiere (centerpiece); add #01–#04 to the official playlist.`,post:`Video cutdowns; weight spend behind the best 15s.`} },
+
+    { title:`Money Back`, rt:`2:34`, week:5,
+      reg:[`<b>SPLIT</b>; <b>ISRC</b>/<b>UPC</b>; <b>DIST</b> T–4`,`<b>PRO</b> + <b>MLC</b> filed; <b>PRESAVE</b> T–2`,`<b>SX</b> added; <b>CID</b> registered`,`<b>CR</b> batch #2 opens (#05–#08)`],
+      mkt:[`Run the standard weekly engine`,`Strong <b>performance / lyric video</b> (blog exclusive + YouTube)`,`Coordinated press push — the main mid-campaign press moment`,`Second Spotify editorial pitch citing playlist traction to date`,`Playful "money-back guarantee" bit tied to the pre-order / merch`],
+      rel:[`Single <b>"Money Back"</b> live on all DSPs`,`Video premiere · newsletter · cross-post`],
+      hook:`Play on the title — a tongue-in-cheek "money-back guarantee" gag for the pre-order/merch. Memorable and easy to share.`,
+      process:{name:`Mid-run press moment`,content:`Press feature / interview push + pull-quote graphics.`,format:`Blog/press feature + quote cards.`,channel:`Music press/blogs · IG feed · X.`,specs:`Press hero ≥1500px wide + 300dpi band photos; IG quote card 1080×1350; X image 1600×900.`},
+      sb:{pre:`Performance/lyric-video build; playful "money-back guarantee" bit for the pre-order.`,rel:`Single live + video premiere; the main mid-run press moment.`,post:`Short cuts; 2nd Spotify editorial pitch citing traction to date.`} },
+
+    { title:`Don't Reckon with Snakes`, rt:`2:19`, week:6,
+      reg:[`<b>SPLIT</b>; <b>ISRC</b>/<b>UPC</b>; <b>DIST</b> T–4`,`<b>PRO</b> + <b>MLC</b> filed; <b>PRESAVE</b> T–2`,`<b>SX</b> added; <b>CID</b> registered`,`<b>CR</b> batch #2 (#05–#08)`],
+      mkt:[`Run the standard weekly engine`,`Target <b>genre playlists</b> hard (Stoner Rock, Desert, Fuzz) — the on-brand banger`,`Gear/riff content for guitar communities (tone breakdown, pedalboard reel)`,`Pitch genre YouTube channels &amp; tastemaker accounts for a share`,`Year-end angle: "best heavy tracks" list submissions`],
+      rel:[`Single <b>"Don't Reckon with Snakes"</b> live on all DSPs`,`Bold snake-motif cover reveal · riff-cam clip · cross-post`],
+      hook:`Strong visual title — a snake-motif cover reveal + riff-cam. Built to travel in gear and heavy-music circles.`,
+      process:{name:`Gear / riff spotlight`,content:`Tone/riff breakdown for guitar &amp; gear communities.`,format:`Vertical gear clip + a longer landscape cut.`,channel:`Reels · TikTok · YouTube.`,specs:`Vertical 1080×1920 (9:16); YouTube 1920×1080 (16:9), thumbnail 1280×720.`},
+      sb:{pre:`Snake-motif cover reveal; gear/riff teaser for the core.`,rel:`Single live + riff-cam; hard genre-playlist push (Stoner / Desert / Fuzz).`,post:`Tone-breakdown cuts; pitch gear channels & tastemakers.`} },
+
+    { title:`Deja Vu`, rt:`2:22`, week:7,
+      reg:[`<b>SPLIT</b>; <b>ISRC</b>/<b>UPC</b>; <b>DIST</b> T–4 (upload early — holidays)`,`<b>PRO</b> + <b>MLC</b> filed; <b>PRESAVE</b> T–2`,`<b>SX</b> added; <b>CID</b> registered`,`<b>CR</b> batch #2 (#05–#08)`],
+      mkt:[`Run the engine; schedule ahead of the holiday slowdown`,`<b>Halfway recap:</b> "7 down, 6 to go — feeling déjà vu?" revisit the run so far`,`Announce the LP pre-order + vinyl now the audience is warm`,`Gift-guide angle — vinyl / merch bundle for the holidays`,`"Story so far" recap video to onboard new followers`],
+      rel:[`Single <b>"Deja Vu"</b> live on all DSPs`,`LP pre-order opens · newsletter · cross-post`],
+      hook:`Use the title — a "déjà vu" recap loop revisiting the earlier singles; doubles as a catch-up for new followers.`,
+      process:{name:`Halfway recap — "7 down, 6 to go"`,content:`Halfway recap restating the story so far.`,format:`Vertical recap video + carousel + email.`,channel:`Reels · TikTok · IG carousel · email.`,specs:`Video 9:16; carousel 1080×1350; email header 1200×600, body ~600px single column.`},
+      sb:{pre:`Midpoint "déjà vu" recap teaser; open the LP pre-order.`,rel:`Single live; "story so far" recap to onboard new followers.`,post:`Recap-loop cuts; gift-guide / holiday bundle angle.`} },
+
+    { title:`Automated`, rt:`1:50`, week:8, hol:true, tlFlag:`holiday`, dhFlag:`Holiday week`,
+      reg:[`<b>SPLIT</b>; <b>ISRC</b>/<b>UPC</b>; <b>DIST</b> uploaded well early`,`<b>PRO</b> + <b>MLC</b> filed; <b>PRESAVE</b> T–2`,`<b>SX</b> added; <b>CID</b> registered`,`<b>CR</b> batch #2 filed this week (#05–#08)`],
+      mkt:[`Pre-schedule the entire week's posts before the holiday`,`"Year in review — 8 singles deep" carousel`,`Lean on <b>evergreen UGC + duets</b> rather than new production`,`Confirm the remaining assets (#09–#13) are shot and banked`],
+      rel:[`Single <b>"Automated"</b> live on all DSPs`,`Looping Reel · light ad spend · cross-post`],
+      hook:`Lean into the title — an "everything's on autopilot this week" bit; a seamless looping Reel that runs itself over the holiday.`,
+      process:{name:`Year-in-review carousel`,content:`"Best of 2026 — 8 singles deep" swipeable recap.`,format:`Instagram carousel (swipeable), 8–10 slides.`,channel:`Instagram feed carousel · IG Stories.`,specs:`1080×1350 (4:5), PNG/JPG, ≤10 slides, first slide is the hook.`},
+      sb:{pre:`"On autopilot" holiday-scheduled teaser (pre-schedule before the holiday).`,rel:`Single live + looping-motif Reel; light ad spend.`,post:`Evergreen UGC / duets; low-lift cuts over the holiday.`} },
+
+    { title:`Ain't No Stopping`, rt:`2:04`, week:9, hol:true, tlFlag:`holiday`, dhFlag:`Holiday week`,
+      reg:[`<b>SPLIT</b>; <b>ISRC</b>/<b>UPC</b>; <b>DIST</b> T–4`,`<b>PRO</b> + <b>MLC</b> filed; <b>PRESAVE</b> T–2`,`<b>SX</b> added; <b>CID</b> registered`,`<b>CR</b> batch #3 opens (#09–#13)`],
+      mkt:[`Run the standard weekly engine`,`"New year, ain't no stopping" relaunch — fresh Meta/TikTok flight`,`Fresh editorial pitch; cite the strongest Q4 stream/save numbers`,`Resubmit to curators who passed earlier, now with proof of traction`,`Tease the finale: "4 singles until it's done"`],
+      rel:[`Single <b>"Ain't No Stopping"</b> live on all DSPs`,`Newsletter · cross-post · finale countdown begins`],
+      hook:`"Ain't No Stopping" is a built-in new-year message — resolution-season framing, the most playlist-friendly single to relaunch on.`,
+      process:{name:`New-year relaunch — "ain't no stopping"`,content:`Relaunch trailer for the new year (organic + paid).`,format:`Vertical hype video + paid ad creative.`,channel:`Reels · TikTok · Meta/TikTok Ads.`,specs:`Organic 9:16 1080×1920; export ad variants 1:1 (1080×1080) & 4:5 (1080×1350) for feed placements; ≤15s.`},
+      sb:{pre:`New-year relaunch teaser; fresh Meta/TikTok ad flight.`,rel:`Single live; "back on it" relaunch; resubmit to curators who passed.`,post:`Cuts; tease the finale — "4 to go."`} },
+
+    { title:`Catch ya on the way down`, rt:`1:32`, week:10,
+      reg:[`<b>SPLIT</b>; <b>ISRC</b>/<b>UPC</b>; <b>DIST</b> T–4`,`<b>PRO</b> + <b>MLC</b> filed; <b>PRESAVE</b> T–2`,`<b>SX</b> added; <b>CID</b> registered`,`<b>CR</b> batch #3 (#09–#13)`],
+      mkt:[`Run the standard weekly engine`,`Second music video or a strong performance video for the heavy crowd`,`Punchy attitude/teaser post — lean on the short, sharp track`,`Open LP pre-save; every action funnels toward the album (Week 14)`,`Retarget all 9 weeks of engaged viewers with a finale countdown`],
+      rel:[`Single <b>"Catch ya on the way down"</b> live on all DSPs`,`Second video / performance clip · newsletter · cross-post`],
+      hook:`The title makes a great sign-off line — a punchy "catch ya on the way down" outro clip; bold cover reveal.`,
+      process:{name:`"3 to go" finale build`,content:`Countdown building to the finale — "3 to go."`,format:`Vertical countdown clip + IG Story countdown sticker.`,channel:`Reels · TikTok · IG Stories.`,specs:`9:16 1080×1920; Story countdown sticker centered in the safe zone.`},
+      sb:{pre:`Punchy short-track teaser; second-video build.`,rel:`Single live + 2nd video / performance clip; bold cover reveal.`,post:`Sign-off "catch ya" cuts; retarget all viewers with a finale countdown.`} },
+
+    { title:`Without Rain`, rt:`2:59`, week:11,
+      reg:[`<b>SPLIT</b>; <b>ISRC</b>/<b>UPC</b>; <b>DIST</b> T–4`,`<b>PRO</b> + <b>MLC</b> filed; <b>PRESAVE</b> T–2`,`<b>SX</b> added; <b>CID</b> registered`,`<b>CR</b> batch #3 (#09–#13)`],
+      mkt:[`Run the standard weekly engine`,`Atmospheric visualizer (dry / desert imagery for "Without Rain")`,`"Easter eggs" callback supercut across the singles so far`,`Hard LP pre-order push; announce release-day livestream/show`,`Pitch an interview or podcast spot to tell the whole story`],
+      rel:[`Single <b>"Without Rain"</b> live on all DSPs`,`Callback supercut · newsletter · cross-post`],
+      hook:`Reward the loyal — pair the atmospheric visualizer with a supercut linking the song back to #01–#10. Signals the payoff is near.`,
+      process:{name:`Fan appreciation / easter eggs`,content:`Fan-appreciation supercut + reshares of the best fan UGC.`,format:`Vertical supercut + Story reshares.`,channel:`TikTok · Reels · IG Stories.`,specs:`9:16 1080×1920; credit original creators on reshares; captions on.`},
+      sb:{pre:`Atmospheric dry/desert visualizer build; reward-the-loyal easter eggs.`,rel:`Single live + visualizer + callback supercut.`,post:`Cuts; hard LP pre-order push; pitch an interview / podcast.`} },
+
+    { title:`Wasting Time`, rt:`2:07`, week:12,
+      reg:[`<b>SPLIT</b>; <b>ISRC</b>/<b>UPC</b>; <b>DIST</b> T–4`,`<b>PRO</b> + <b>MLC</b> filed; <b>PRESAVE</b> T–2`,`<b>SX</b> added; <b>CID</b> registered`,`<b>CR</b> batch #3 (#09–#13)`],
+      mkt:[`Run the standard weekly engine`,`<b>Finale countdown</b> everywhere: "Next week it ends — plus the full album."`,`Peak ad spend to maximize LP pre-saves before the album (Week 14)`,`Set the press embargo for the finale + album (coordinate premieres)`,`Lock release-week plans: livestream, listening party, or show`],
+      rel:[`Single <b>"Wasting Time"</b> live on all DSPs`,`Newsletter · cross-post · finale teaser for next week`],
+      hook:`Title-driven urgency: "don't waste time — one single left." Point everyone at next week's finale.`,
+      process:{name:`Finale countdown — "next week it ends"`,content:`"Next week it ends — plus the album" finale countdown.`,format:`Vertical countdown + email blast.`,channel:`Reels · TikTok · IG Stories · email.`,specs:`Video 9:16; email 1200×600 header + 600px body; Story countdown sticker.`},
+      sb:{pre:`"Don't waste time — one single left" finale-countdown teaser; peak pre-save spend.`,rel:`Single live; finale teaser for next week; set the press embargo.`,post:`Cuts; lock release-week plans (livestream / party / show).`} },
+
+    { title:`Troubles are Behind You`, rt:`2:20`, week:13, finale:true, tlFlag:`finale`, dhFlag:`Finale`,
+      reg:[`<b>SPLIT</b>; <b>ISRC</b>/<b>UPC</b>; <b>DIST</b> T–4`,`<b>PRO</b> + <b>MLC</b> filed; <b>PRESAVE</b> T–2`,`<b>SX</b> added; <b>CID</b> registered`,`<b>CR</b> batch #3 filed (#09–#13) — full catalog now registered`],
+      mkt:[`Run the standard weekly engine`,`Finish the <b>finale video</b> — the campaign centerpiece`,`Full press push: pitch the "13 singles in 13 weeks" story`,`Set up a release livestream / listening party`,`Direct all traffic to the <b>LP pre-save</b> — one week to the album`],
+      rel:[`Single <b>"Troubles are Behind You"</b> live on all DSPs`,`<b>Finale video premiere</b> · livestream / listening party · newsletter`],
+      hook:`"Troubles are Behind You" is a natural sign-off — a payoff reel that ties the finale back to the opener. Prioritize paid + organic.`,
+      process:{name:`Finale + "13-in-13" press story`,content:`Finale drop + "13-in-13 experiment" press story + livestream.`,format:`Vertical finale clip + press feature + YouTube premiere.`,channel:`Reels · TikTok · YouTube · press.`,specs:`Clip 9:16; YouTube premiere 1920×1080 (16:9), thumb 1280×720; press hero ≥1500px.`},
+      sb:{pre:`Finale video build; pitch the "13-in-13" press story.`,rel:`Single live + finale video premiere; livestream / listening party.`,post:`Payoff-reel cuts tying the finale to the opener; drive to the LP pre-save (one week out).`} }
+  ];
+
+  var ALBUM={
+    lp:true, hash:`LP`, title:`Time Traveler — Full Album`, week:14,
+    trackLabel:`Album · all 13 tracks`, tlTitle:`Full Album`,
+    reg:[`<b>Album UPC</b> assigned; album delivered to distributor T–4`,`Any bonus/interlude tracks: <b>ISRC</b>, <b>PRO</b>, <b>MLC</b>, <b>SX</b>, <b>CID</b>`,`Final <b>CR</b> batch filed if bonus material exists`,`Vinyl/CD manufacturing confirmed`],
+    mkt:[`Full-album editorial + press push ("the whole story, one place")`,`Convert 13 weeks of pre-saves; retarget every engaged fan`,`Add the album to every relevant playlist`,`Confirm listening party / livestream / hometown show`],
+    rel:[`Full <b>13-track LP</b> live on all DSPs`,`Vinyl / CD / digital on sale`,`Release event: listening party / livestream / show`],
+    hookLabel:`After this`, hook:`Sync pitching, merch/vinyl re-orders, tour routing, and playlist upkeep. Royalty registrations begin paying out.`,
+    process:{name:`"The whole album, one place" — LP arrives`,content:`LP arrival trailer + recap — "the whole album, one place."`,format:`Vertical album trailer + carousel + email.`,channel:`Reels · TikTok · YouTube · IG carousel · email.`,specs:`Trailer 9:16; carousel 1080×1350; YouTube 16:9; email ~600px body.`},
+    sbA:{
+      pre:{content:`Full-album editorial + press push; convert 13 weeks of pre-saves; vinyl/CD pre-order; announce the listening party / show.`,format:`Album trailer, press feature, pre-order page, announce graphics.`,channel:`Music press · Reels/TikTok · IG carousel · email · store.`,specs:`Trailer 9:16 1080×1920; press hero ≥1500px + 300dpi photos; carousel 1080×1350; album art 3000×3000.`},
+      rel:{content:`LP live on all DSPs; vinyl/CD/digital on sale; release event — livestream / listening party.`,format:`Album release, live video, feed + Story posts, email blast.`,channel:`All DSPs · YouTube/IG Live · store · email.`,specs:`Livestream 1920×1080 (16:9); Story graphics 1080×1920; email 1200×600 header + ~600px body.`},
+      post:{content:`Sync pitching; merch / vinyl re-orders; tour routing; playlist upkeep + royalties reconcile.`,format:`Sync one-sheet + WAVs, merch drops, tour graphics, ongoing clips.`,channel:`Sync/licensing contacts · store · IG/TikTok · playlists.`,specs:`Deliver masters as 24-bit/48kHz WAV + tempo/key/lyric one-sheet; tour poster 1080×1350; reconcile statements vs. split sheets quarterly.`}
+    }
+  };
+
+  // registration matrix columns
+  var COLS=[
+    {k:'SPLIT',o:'Writers'},{k:'ISRC',o:'Distributor'},{k:'UPC',o:'Distributor'},
+    {k:'DIST',o:'Distributor'},{k:'PRO',o:'ASCAP/BMI'},{k:'MLC',o:'The MLC'},
+    {k:'SX',o:'SoundExch.'},{k:'CR',o:'Copyright'},{k:'CID',o:'YouTube'},{k:'PRESAVE',o:'Pre-save'}
+  ];
+  var ALBUM_NA={SPLIT:1,ISRC:1,PRO:1,MLC:1,SX:1,CR:1,CID:1}; // album: only release-level + pre-save unless bonus tracks
+
+  /* per-week Scouter the Game tie-in — the music & game feed each other */
+  var GAME=[
+    `Reveal the game — an FPS gameplay clip scored to "Broken Hearted"; first look drops with the single.`,
+    `Racing-mode clip across a cold, windswept map cut to "Where the Cold Wind Blows."`,
+    `"Worst run" blooper reel (lean into the janky charm) set to "Ain't Even Tryin."`,
+    `Title-track game trailer — FPS + racing footage cut to "Time Traveler," the game's showcase moment.`,
+    `FPS score-attack clip with a "money-back" pickup gag tied to the single.`,
+    `Boss / enemy FPS clip — the snakes — set to "Don't Reckon with Snakes"; riff + gameplay crossover.`,
+    `Racing "déjà vu" replay (same corner, over and over) set to the single.`,
+    `Auto-pilot / looping gameplay clip (hands-off) — low-lift holiday post for "Automated."`,
+    `No-brakes high-speed racing clip powering the "Ain't No Stopping" new-year relaunch.`,
+    `Big-drop clip — a jump or a fall — set to the short, punchy "Catch ya on the way down."`,
+    `Atmospheric flythrough of a dry desert level set to "Without Rain."`,
+    `Speedrun clip — "don't waste time" — set to "Wasting Time."`,
+    `Finale game trailer — best-of FPS + racing montage + a demo / wishlist CTA.`
+  ];
+
+  /* ================= DERIVED HELPERS ================= */
+  function hashOf(n){return n<10?'#0'+n:'#'+n;}
+  SINGLES.forEach(function(w,i){
+    var n=i+1;
+    w.hash=hashOf(n); w.tlTitle=w.title;
+    w.trackLabel='Track '+n+' · '+w.rt;
+    w.game=GAME[i];
+  });
+  ALBUM.game=`Full album playable as the in-game soundtrack; the demo goes live (Steam Next Fest push) and the game + LP bundle launches.`;
+  var WEEKS=SINGLES.concat([ALBUM]); // 14 entries for timeline + detail
+
+  function ul(arr,cls){return '<ul class="chk '+cls+'">'+arr.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>';}
+
+  /* ================= RENDER: TIMELINE ================= */
+  var track=document.getElementById('tl-track');
+  track.innerHTML=WEEKS.map(function(w,i){
+    var cls='tl-node'+(i===0?' active':'')+(w.hol?' hol':'')+(w.lp?' lp':'');
+    var flag=w.tlFlag?'<span class="tl-flag">'+w.tlFlag+'</span>':'';
+    return '<button class="'+cls+'" data-target="d'+(i+1)+'" aria-expanded="'+(i===0?'true':'false')+'">'
+      +'<span class="tl-dot"></span><span class="tl-hash">'+w.hash+'</span>'
+      +'<span class="tl-date">Week '+w.week+'</span><span class="tl-title">'+w.tlTitle+'</span>'+flag+'</button>';
+  }).join('');
+
+  /* ================= RENDER: DETAIL PANELS ================= */
+  document.getElementById('details').innerHTML=WEEKS.map(function(w,i){
+    var pill=w.pill?' <span class="pill">title track</span>':'';
+    var flag=w.dhFlag?'<span class="flag">'+w.dhFlag+'</span>':'';
+    return '<div class="detail'+(i===0?' on':'')+'" id="d'+(i+1)+'"><div class="detail-card">'
+      +'<div class="detail-head"><span class="dh-hash">'+w.hash+'</span>'
+      +'<div class="dh-main"><div class="dh-title">'+w.title+pill+'</div></div>'
+      +'<div class="dh-date"><span class="wk">'+w.trackLabel+'</span>Releases in Week '+w.week+flag+'</div></div>'
+      +'<div class="detail-grid">'
+      +'<div class="dcol lead-col"><h4><span class="k">▣</span> Leading up to release</h4>'
+      +'<p class="sub-label">Register (must clear before ship)</p>'+ul(w.reg,'reg')
+      +'<p class="sub-label" style="margin-top:16px">Marketing (the weeks before)</p>'+ul(w.mkt,'mkt')+'</div>'
+      +'<div class="dcol rel-col"><h4><span class="k">◆</span> Released this week</h4>'+ul(w.game?w.rel.concat(['<b>Game clip</b> — '+w.game]):w.rel,'drop')
+      +'<div class="hook"><b>'+(w.hookLabel||'Song hook')+'</b> '+w.hook+'</div></div>'
+      +'</div></div></div>';
+  }).join('');
+
+  /* ================= RENDER: REGISTRATION MATRIX ================= */
+  var SYM={todo:'○',wip:'◐',done:'✓',na:'–'};
+  var LABEL={todo:'To do',wip:'In progress',done:'Done',na:'N/A'};
+  var NEXT={todo:'wip',wip:'done',done:'todo'};
+  var table=document.getElementById('reg-matrix');
+  var thead='<thead><tr><th class="corner">Track</th>';
+  COLS.forEach(function(c){thead+='<th><span class="mcol-k">'+c.k+'</span><span class="mcol-o">'+c.o+'</span></th>';});
+  thead+='</tr></thead>';
+  function row(hash,title,naMap){
+    var tr='<tr><td class="rowhead"><span class="rh-hash">'+hash+'</span><span class="rh-title">'+title+'</span></td>';
+    COLS.forEach(function(c){
+      var s=(naMap&&naMap[c.k])?'na':'todo';
+      tr+='<td><button class="cell" data-s="'+s+'" data-col="'+c.k+'" aria-label="'+hash+' '+title+' — '+c.k+': '+LABEL[s]+'">'+SYM[s]+'</button></td>';
+    });
+    return tr+'</tr>';
+  }
+  var tbody='<tbody>';
+  SINGLES.forEach(function(w){tbody+=row(w.hash,w.title,null);});
+  tbody+=row(ALBUM.hash,'Full Album',ALBUM_NA);
+  tbody+='</tbody>';
+  table.innerHTML=thead+tbody;
+
+  var countEl=document.getElementById('reg-count');
+  var cells=[].slice.call(table.querySelectorAll('.cell'));
+  function refresh(){
+    var total=0,done=0;
+    cells.forEach(function(c){if(c.getAttribute('data-s')!=='na'){total++;if(c.getAttribute('data-s')==='done')done++;}});
+    countEl.innerHTML='<b>'+done+'</b> of '+total+' complete';
+  }
+  cells.forEach(function(c){
+    c.addEventListener('click',function(){
+      var s=c.getAttribute('data-s'); if(s==='na')return;
+      var ns=NEXT[s]; c.setAttribute('data-s',ns); c.textContent=SYM[ns];
+      c.setAttribute('aria-label',c.getAttribute('aria-label').replace(/:[^:]*$/,': '+LABEL[ns]));
+      refresh();
+    });
+  });
+  refresh();
+
+  /* ================= RENDER: STREAM A (process, 14 weeks) ================= */
+  function specDrop(id,lbl,name,content,fmt,ch,sp,extra){
+    return '<div class="acc wk"><button class="acc-btn" aria-expanded="false" aria-controls="'+id+'">'
+      +'<span class="wk-lbl">'+lbl+'</span><span class="wk-name">'+name+'</span>'
+      +'<span class="acc-chev" aria-hidden="true">▾</span></button>'
+      +'<div class="acc-panel" id="'+id+'"><dl class="spec">'
+      +'<dt>Content</dt><dd>'+content+'</dd><dt>Format</dt><dd>'+fmt+'</dd>'
+      +'<dt>Channel</dt><dd>'+ch+'</dd><dt>Specs</dt><dd>'+sp+'</dd>'+(extra||'')+'</dl></div></div>';
+  }
+  document.getElementById('sb-process').innerHTML=WEEKS.map(function(w,i){
+    var p=w.process;
+    var g=w.game?'<dt>Game</dt><dd>'+w.game+'</dd>':'';
+    return specDrop('wk'+(i+1),'Week '+w.week,p.name,p.content,p.format,p.channel,p.specs,g);
+  }).join('');
+
+  /* ================= RENDER: STREAM B (13 singles + album) ================= */
+  var PH=[['Phase 1','Prerelease','pre'],['Phase 2','Release','rel'],['Phase 3','Post-release','post']];
+  document.getElementById('sb-singles').innerHTML=SINGLES.map(function(w,i){
+    var n=i+1, tid='sb-t'+n;
+    var phases=PH.map(function(p){
+      var t=SB_TPL[p[2]];
+      return specDrop(tid+'-'+p[2],p[0],p[1],w.sb[p[2]],t.f,t.c,t.s);
+    }).join('');
+    return '<div class="acc single"><button class="acc-btn" aria-expanded="false" aria-controls="'+tid+'">'
+      +'<span class="wk-lbl">Week '+w.week+'</span><span class="wk-name">'+n+'. '+w.title+'</span>'
+      +'<span class="acc-chev" aria-hidden="true">▾</span></button>'
+      +'<div class="acc-panel" id="'+tid+'"><div class="proc-list">'+phases+'</div></div></div>';
+  }).join('');
+  document.getElementById('sb-album').innerHTML=PH.map(function(p){
+    var d=ALBUM.sbA[p[2]];
+    return specDrop('sb-a-'+p[2],p[0],p[1],d.content,d.format,d.channel,d.specs);
+  }).join('');
+
+  /* ================= RENDER: MERCH OVERVIEW ================= */
+  var MERCH=[
+    {cat:'Music — physical & digital (bulk press, ~100–300 run)', items:[
+      {name:'Vinyl LP — standard black', cost:11, price:28},
+      {name:'Vinyl LP — limited color (ltd run)', cost:14, price:35},
+      {name:'7" single — one song per side (A/B)', cost:5, price:14},
+      {name:'CD — digipak', cost:2.5, price:13},
+      {name:'Cassette', cost:3.5, price:12},
+      {name:'Digital download — lossless', cost:0, price:8}
+    ]},
+    {cat:'Apparel — Printful / Printify (print-on-demand base)', items:[
+      {name:'T-shirt — Bella+Canvas 3001', cost:11.5, price:28},
+      {name:'Long sleeve', cost:20, price:38},
+      {name:'Hoodie — pullover', cost:27.25, price:60},
+      {name:'Dad hat — embroidered (Yupoong)', cost:17, price:32}
+    ]},
+    {cat:'Accessories', items:[
+      {name:'Enamel pin — soft enamel (100, mold amortized)', cost:3, price:12},
+      {name:'Sticker pack (5) — die-cut', cost:1.5, price:6},
+      {name:'Poster (18×24) — bulk screen print', cost:6, price:20},
+      {name:'Koozie — full color', cost:1.25, price:7},
+      {name:'Tote bag — POD', cost:13, price:24}
+    ]},
+    {cat:'Bundles (priced below sum of parts)', items:[
+      {name:'"Time Traveler" bundle — LP + shirt + pin', cost:25.5, price:55},
+      {name:'Tape starter — cassette + sticker pack', cost:5, price:15},
+      {name:'Game + 7" bundle — Steam/itch key + 7"', cost:5, price:20}
+    ]}
+  ];
+  (function(){
+    var mt=document.getElementById('merch-table'); if(!mt)return;
+    var money=function(n){return '$'+n.toFixed(2);};
+    var h='<thead><tr><th>Item</th><th class="num">Est. unit cost</th><th class="num">Sell price</th><th class="num">Margin</th><th class="num">Margin %</th></tr></thead><tbody>';
+    MERCH.forEach(function(g){
+      h+='<tr class="cat"><td colspan="5">'+g.cat+'</td></tr>';
+      g.items.forEach(function(it){
+        var m=it.price-it.cost, pct=it.price?Math.round(m/it.price*100):0;
+        h+='<tr class="item-row"><td class="item">'+it.name+'</td>'
+          +'<td class="num">'+money(it.cost)+'</td><td class="num">'+money(it.price)+'</td>'
+          +'<td class="num marg">'+money(m)+'</td><td class="num marg">'+pct+'%</td></tr>';
+      });
+    });
+    h+='</tbody>';
+    mt.innerHTML=h;
+  })();
+
+  /* ================= WIRING ================= */
+  /* accordions (all, incl. generated) */
+  [].slice.call(document.querySelectorAll('.acc-btn')).forEach(function(btn){
+    var panel=document.getElementById(btn.getAttribute('aria-controls'));
+    if(!panel)return;
+    btn.addEventListener('click',function(){
+      var open=btn.getAttribute('aria-expanded')==='true';
+      btn.setAttribute('aria-expanded',open?'false':'true');
+      panel.classList.toggle('open',!open);
+    });
+  });
+  /* timeline detail reveal */
+  var nodes=[].slice.call(document.querySelectorAll('.tl-node'));
+  var details=[].slice.call(document.querySelectorAll('.detail'));
+  nodes.forEach(function(n){
+    n.addEventListener('click',function(){
+      var id=n.getAttribute('data-target');
+      details.forEach(function(d){d.classList.toggle('on',d.id===id);});
+      nodes.forEach(function(x){var on=x===n;x.classList.toggle('active',on);x.setAttribute('aria-expanded',on?'true':'false');});
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
