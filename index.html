@@ -140,6 +140,12 @@
   ul.chk.drop li::before{border-color:var(--ink);background:var(--neon)}
   :root[data-theme="dark"] ul.chk.drop li::before{border-color:var(--paper)}
   @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) ul.chk.drop li::before{border-color:var(--paper)}}
+  /* interactive checklist — "Leading up to release" column */
+  .dcol.lead-col ul.chk li{cursor:pointer;-webkit-tap-highlight-color:transparent;transition:color .1s}
+  .dcol.lead-col ul.chk li::before{display:grid;place-items:center;font-family:var(--mono);font-size:11px;line-height:1;color:transparent;transition:background .1s,border-color .1s}
+  .dcol.lead-col ul.chk li:hover::before{border-color:var(--neon)}
+  .dcol.lead-col ul.chk li.done::before{content:"✓";background:var(--neon);border-color:var(--ink);color:var(--ink);font-weight:700}
+  .dcol.lead-col ul.chk li.done{color:var(--fg-faint);text-decoration:line-through;text-decoration-color:var(--line-soft)}
   .pill{display:inline-block;font-family:var(--mono);font-weight:700;font-size:.58rem;letter-spacing:.04em;padding:1px 5px;background:var(--neon);color:var(--ink);border:1.5px solid var(--ink);margin-right:4px}
   .hook{margin-top:16px;padding:12px 14px;border:2px dashed var(--line-soft);background:rgba(0,200,83,.05);font-size:.86rem;color:var(--fg-soft)}
   .hook b{font-family:var(--mono);font-weight:700;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);display:block;margin-bottom:4px}
@@ -1208,6 +1214,15 @@
       nodes.forEach(function(x){var on=x===n;x.classList.toggle('active',on);x.setAttribute('aria-expanded',on?'true':'false');});
     });
   });
+
+  /* tick off "Leading up to release" checklist items */
+  var detailsHost=document.getElementById('details');
+  if(detailsHost){
+    detailsHost.addEventListener('click',function(e){
+      var li=e.target.closest('.dcol.lead-col ul.chk li');
+      if(li) li.classList.toggle('done');
+    });
+  }
 })();
 </script>
 
