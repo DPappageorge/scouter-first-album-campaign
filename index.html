@@ -1298,12 +1298,29 @@
     });
   });
 
-  /* tick off "Leading up to release" checklist items */
+  /* tick off "Leading up to release" checklist items — persisted per-browser */
   var detailsHost=document.getElementById('details');
   if(detailsHost){
+    var CHK_KEY='scouter-checklist-v1';
+    var checkState={};
+    try{checkState=JSON.parse(localStorage.getItem(CHK_KEY))||{};}catch(err){checkState={};}
+    /* stable id for an <li>: detail id + list class + index within its list */
+    function liKey(li){
+      var ul=li.parentNode, detail=li.closest('.detail');
+      var cls=(ul.className.match(/\b(reg|mkt)\b/)||[])[1]||'x';
+      var idx=Array.prototype.indexOf.call(ul.children,li);
+      return (detail?detail.id:'d')+'.'+cls+'.'+idx;
+    }
+    /* restore saved ticks */
+    detailsHost.querySelectorAll('.dcol.lead-col ul.chk li').forEach(function(li){
+      if(checkState[liKey(li)]) li.classList.add('done');
+    });
     detailsHost.addEventListener('click',function(e){
       var li=e.target.closest('.dcol.lead-col ul.chk li');
-      if(li) li.classList.toggle('done');
+      if(!li) return;
+      li.classList.toggle('done');
+      checkState[liKey(li)]=li.classList.contains('done');
+      try{localStorage.setItem(CHK_KEY,JSON.stringify(checkState));}catch(err){}
     });
   }
 })();
