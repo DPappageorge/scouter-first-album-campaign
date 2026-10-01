@@ -286,14 +286,46 @@
 <section class="stack">
   <div class="wrap">
 
-    <!-- ============ ACCORDION 1: SCHEDULE ============ -->
+    <!-- ============ ACCORDION 1: CAMPAIGN GOALS ============ -->
     <div class="acc">
-      <button class="acc-btn" id="btn-schedule" aria-expanded="true" aria-controls="p-schedule">
-        <span class="acc-num">01</span>
+      <button class="acc-btn" id="btn-goals" aria-expanded="true" aria-controls="p-goals">
+        <span class="acc-num">01</span><span class="acc-title">Campaign Goals</span>
+        <span class="acc-chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="acc-panel open" id="p-goals" role="region" aria-labelledby="btn-goals">
+        <p class="mkt-intro" style="margin:0 0 14px">Three layers of goals, each feeding the next: what the <b>band</b> is building toward long-term, what <b>this campaign</b> must deliver over the 13 weeks, and what each <b>member owns</b> to make it happen. Fill these in together — every weekly decision should trace back to one of these.</p>
+
+        <div class="pg-group">Band goals <small>the long game</small></div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><i>Add a band goal…</i></li>
+          <li><i>Add a band goal…</i></li>
+          <li><i>Add a band goal…</i></li>
+        </ul>
+
+        <div class="pg-group mt">Campaign goals <small>the 13 weeks</small></div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><i>Add a campaign goal…</i></li>
+          <li><i>Add a campaign goal…</i></li>
+          <li><i>Add a campaign goal…</i></li>
+        </ul>
+
+        <div class="pg-group mt">Individual goals <small>who owns what</small></div>
+        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+          <li><i>Add an individual goal…</i></li>
+          <li><i>Add an individual goal…</i></li>
+          <li><i>Add an individual goal…</i></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============ ACCORDION 2: SCHEDULE ============ -->
+    <div class="acc">
+      <button class="acc-btn" id="btn-schedule" aria-expanded="false" aria-controls="p-schedule">
+        <span class="acc-num">02</span>
         <span class="acc-title">Schedule at a Glance</span>
         <span class="acc-chev" aria-hidden="true">▾</span>
       </button>
-      <div class="acc-panel open" id="p-schedule" role="region" aria-labelledby="btn-schedule">
+      <div class="acc-panel" id="p-schedule" role="region" aria-labelledby="btn-schedule">
         <div class="tl-scroll">
           <div class="timeline">
             <div class="tl-track" id="tl-track"></div>
@@ -303,10 +335,10 @@
       </div>
     </div>
 
-    <!-- ============ ACCORDION 2: REGISTRATIONS ============ -->
+    <!-- ============ ACCORDION 3: REGISTRATIONS ============ -->
     <div class="acc">
       <button class="acc-btn" id="btn-reg" aria-expanded="false" aria-controls="p-reg">
-        <span class="acc-num">02</span>
+        <span class="acc-num">03</span>
         <span class="acc-title">Registrations</span>
         <span class="acc-chev" aria-hidden="true">▾</span>
       </button>
@@ -341,10 +373,10 @@
       </div>
     </div>
 
-    <!-- ============ ACCORDION 3: MARKETING OVERVIEW ============ -->
+    <!-- ============ ACCORDION 4: MARKETING OVERVIEW ============ -->
     <div class="acc">
       <button class="acc-btn" id="btn-mkt" aria-expanded="false" aria-controls="p-mkt">
-        <span class="acc-num">03</span>
+        <span class="acc-num">04</span>
         <span class="acc-title">Marketing Overview</span>
         <span class="acc-chev" aria-hidden="true">▾</span>
       </button>
@@ -405,10 +437,10 @@
       </div>
     </div>
 
-    <!-- ============ ACCORDION 4: MERCH OVERVIEW ============ -->
+    <!-- ============ ACCORDION 5: MERCH OVERVIEW ============ -->
     <div class="acc">
       <button class="acc-btn" id="btn-merch" aria-expanded="false" aria-controls="p-merch">
-        <span class="acc-num">04</span>
+        <span class="acc-num">05</span>
         <span class="acc-title">Merch Overview</span>
         <span class="acc-chev" aria-hidden="true">▾</span>
       </button>
@@ -453,10 +485,10 @@
       </div>
     </div>
 
-    <!-- ============ ACCORDION 5: BUDGET & REVENUE ============ -->
+    <!-- ============ ACCORDION 6: BUDGET & REVENUE ============ -->
     <div class="acc">
       <button class="acc-btn" id="btn-budget" aria-expanded="false" aria-controls="p-budget">
-        <span class="acc-num">05</span><span class="acc-title">Budget &amp; Revenue</span>
+        <span class="acc-num">06</span><span class="acc-title">Budget &amp; Revenue</span>
         <span class="acc-chev" aria-hidden="true">▾</span>
       </button>
       <div class="acc-panel" id="p-budget" role="region" aria-labelledby="btn-budget">
@@ -523,10 +555,10 @@
       </div>
     </div>
 
-    <!-- ============ ACCORDION 6: LIVE & TOURING ============ -->
+    <!-- ============ ACCORDION 7: LIVE & TOURING ============ -->
     <div class="acc">
       <button class="acc-btn" id="btn-live" aria-expanded="false" aria-controls="p-live">
-        <span class="acc-num">06</span><span class="acc-title">Live &amp; Touring</span>
+        <span class="acc-num">07</span><span class="acc-title">Live &amp; Touring</span>
         <span class="acc-chev" aria-hidden="true">▾</span>
       </button>
       <div class="acc-panel" id="p-live" role="region" aria-labelledby="btn-live">
@@ -604,10 +636,10 @@
       </div>
     </div>
 
-    <!-- ============ ACCORDION 7: SYNC & LICENSING ============ -->
+    <!-- ============ ACCORDION 8: SYNC & LICENSING ============ -->
     <div class="acc">
       <button class="acc-btn" id="btn-sync" aria-expanded="false" aria-controls="p-sync">
-        <span class="acc-num">07</span><span class="acc-title">Sync &amp; Licensing</span>
+        <span class="acc-num">08</span><span class="acc-title">Sync &amp; Licensing</span>
         <span class="acc-chev" aria-hidden="true">▾</span>
       </button>
       <div class="acc-panel" id="p-sync" role="region" aria-labelledby="btn-sync">
@@ -700,10 +732,10 @@
       </div>
     </div>
 
-    <!-- ============ ACCORDION 8: PRESS & RADIO ============ -->
+    <!-- ============ ACCORDION 9: PRESS & RADIO ============ -->
     <div class="acc">
       <button class="acc-btn" id="btn-press" aria-expanded="false" aria-controls="p-press">
-        <span class="acc-num">08</span><span class="acc-title">Press &amp; Radio</span>
+        <span class="acc-num">09</span><span class="acc-title">Press &amp; Radio</span>
         <span class="acc-chev" aria-hidden="true">▾</span>
       </button>
       <div class="acc-panel" id="p-press" role="region" aria-labelledby="btn-press">
@@ -780,10 +812,10 @@
       </div>
     </div>
 
-    <!-- ============ ACCORDION 9: SCOUTER THE GAME ============ -->
+    <!-- ============ ACCORDION 10: SCOUTER THE GAME ============ -->
     <div class="acc">
       <button class="acc-btn" id="btn-game" aria-expanded="false" aria-controls="p-game">
-        <span class="acc-num">09</span><span class="acc-title">Scouter the Game</span>
+        <span class="acc-num">10</span><span class="acc-title">Scouter the Game</span>
         <span class="acc-chev" aria-hidden="true">▾</span>
       </button>
       <div class="acc-panel" id="p-game" role="region" aria-labelledby="btn-game">
@@ -868,10 +900,10 @@
       </div>
     </div>
 
-    <!-- ============ ACCORDION 10: OWNING IT ALL ============ -->
+    <!-- ============ ACCORDION 11: OWNING IT ALL ============ -->
     <div class="acc">
       <button class="acc-btn" id="btn-own" aria-expanded="false" aria-controls="p-own">
-        <span class="acc-num">10</span><span class="acc-title">Owning It All</span>
+        <span class="acc-num">11</span><span class="acc-title">Owning It All</span>
         <span class="acc-chev" aria-hidden="true">▾</span>
       </button>
       <div class="acc-panel" id="p-own" role="region" aria-labelledby="btn-own">
@@ -945,38 +977,6 @@
           <div>Soundtrack / DLC / bundle revenue — <a href="https://www.strayspark.studio/blog/indie-game-monetization-2026-pricing-strategy" target="_blank" rel="noopener">StraySpark</a> · <a href="https://www.steampageanalyzer.com/blog/steam-bundle-strategy" target="_blank" rel="noopener">Steam bundle strategy</a></div>
           <div>Label &amp; ownership economics — <a href="https://dittomusic.com/en/blog/how-independent-record-labels-make-money" target="_blank" rel="noopener">Ditto Music</a> · <a href="https://artistrack.com/independent-music-market-share-2026/" target="_blank" rel="noopener">Artistrack 2026</a></div>
         </div>
-      </div>
-    </div>
-
-    <!-- ============ ACCORDION 11: CAMPAIGN GOALS ============ -->
-    <div class="acc">
-      <button class="acc-btn" id="btn-goals" aria-expanded="false" aria-controls="p-goals">
-        <span class="acc-num">11</span><span class="acc-title">Campaign Goals</span>
-        <span class="acc-chev" aria-hidden="true">▾</span>
-      </button>
-      <div class="acc-panel" id="p-goals" role="region" aria-labelledby="btn-goals">
-        <p class="mkt-intro" style="margin:0 0 14px">Three layers of goals, each feeding the next: what the <b>band</b> is building toward long-term, what <b>this campaign</b> must deliver over the 13 weeks, and what each <b>member owns</b> to make it happen. Fill these in together — every weekly decision should trace back to one of these.</p>
-
-        <div class="pg-group">Band goals <small>the long game</small></div>
-        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
-          <li><i>Add a band goal…</i></li>
-          <li><i>Add a band goal…</i></li>
-          <li><i>Add a band goal…</i></li>
-        </ul>
-
-        <div class="pg-group mt">Campaign goals <small>the 13 weeks</small></div>
-        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
-          <li><i>Add a campaign goal…</i></li>
-          <li><i>Add a campaign goal…</i></li>
-          <li><i>Add a campaign goal…</i></li>
-        </ul>
-
-        <div class="pg-group mt">Individual goals <small>who owns what</small></div>
-        <ul style="margin:0 0 4px;padding-left:18px;display:flex;flex-direction:column;gap:8px">
-          <li><i>Add an individual goal…</i></li>
-          <li><i>Add an individual goal…</i></li>
-          <li><i>Add an individual goal…</i></li>
-        </ul>
       </div>
     </div>
 
