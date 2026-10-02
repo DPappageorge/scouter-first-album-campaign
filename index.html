@@ -67,6 +67,30 @@
   .lead b{color:var(--fg)}
   .rule{height:2px;background:var(--line);border:0;margin:0}
 
+  /* ---------- CAMPAIGN CYCLE ---------- */
+  .cycle{margin:0 0 26px}
+  .cyc-cap{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-faint);margin:0 0 12px}
+  .cyc-row{display:flex;align-items:stretch;flex-wrap:wrap;gap:10px}
+  .cyc-step{flex:1 1 150px;min-width:140px;background:var(--card);border:2px solid var(--line);box-shadow:4px 4px 0 var(--shadow);
+    padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+  .cyc-step .cyc-k{font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  .cyc-step .cyc-t{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1.05rem;line-height:1}
+  .cyc-step .cyc-d{font-family:var(--mono);font-size:.62rem;line-height:1.5;color:var(--fg-faint)}
+  .cyc-step.found{background:var(--neon);border-color:var(--ink);box-shadow:4px 4px 0 var(--neon-deep)}
+  .cyc-step.found .cyc-k{color:var(--ink)}
+  .cyc-step.found .cyc-t,.cyc-step.found .cyc-d{color:var(--ink)}
+  .cyc-arrow{align-self:center;font-family:var(--mono);font-weight:700;font-size:1.3rem;color:var(--accent);flex:0 0 auto;line-height:1}
+  .cyc-loop{flex:3 1 460px;min-width:260px;border:2px dashed var(--line-soft);padding:10px 10px 12px;position:relative}
+  .cyc-loop-lbl{position:absolute;top:-9px;left:12px;background:var(--ground);padding:0 7px;font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+  .cyc-loop .cyc-row{gap:8px}
+  .cyc-loop .cyc-step{box-shadow:3px 3px 0 var(--shadow)}
+  .cyc-loopback{color:var(--accent-ink)}
+  @media (max-width:560px){
+    .cyc-row{flex-direction:column;align-items:stretch}
+    .cyc-arrow{transform:rotate(90deg);align-self:center;margin:-2px 0}
+    .cyc-loop{flex-basis:auto}
+  }
+
   /* ---------- ACCORDION ---------- */
   .acc{margin-bottom:16px}
   .acc-btn{width:100%;display:flex;align-items:center;gap:16px;text-align:left;cursor:pointer;
@@ -285,6 +309,42 @@
 <main>
 <section class="stack">
   <div class="wrap">
+
+    <!-- ============ CAMPAIGN CYCLE ============ -->
+    <div class="cycle" role="img" aria-label="Campaign cycle: build the foundation and infrastructure first, then repeat release, play, record.">
+      <p class="cyc-cap">The cycle — build the base once, then loop</p>
+      <div class="cyc-row">
+        <div class="cyc-step found">
+          <span class="cyc-k">Start here · once</span>
+          <span class="cyc-t">Foundation</span>
+          <span class="cyc-d">Build the infrastructure first so every effort after it pays off more.</span>
+        </div>
+        <span class="cyc-arrow" aria-hidden="true">→</span>
+        <div class="cyc-loop">
+          <span class="cyc-loop-lbl">Repeat</span>
+          <div class="cyc-row">
+            <div class="cyc-step">
+              <span class="cyc-k">Then</span>
+              <span class="cyc-t">Release</span>
+              <span class="cyc-d">Album 1, then each new record.</span>
+            </div>
+            <span class="cyc-arrow" aria-hidden="true">→</span>
+            <div class="cyc-step">
+              <span class="cyc-k">Next</span>
+              <span class="cyc-t">Play</span>
+              <span class="cyc-d">One-offs, weekends, 1–2 week runs.</span>
+            </div>
+            <span class="cyc-arrow" aria-hidden="true">→</span>
+            <div class="cyc-step">
+              <span class="cyc-k">Next</span>
+              <span class="cyc-t">Record</span>
+              <span class="cyc-d">Make the next release.</span>
+            </div>
+            <span class="cyc-arrow cyc-loopback" aria-hidden="true" title="back to Release">↺</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ============ ACCORDION 1: CAMPAIGN GOALS ============ -->
     <div class="acc">
