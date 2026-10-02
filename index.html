@@ -69,26 +69,28 @@
 
   /* ---------- CAMPAIGN CYCLE ---------- */
   .cycle{margin:0 0 26px}
-  .cyc-cap{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-faint);margin:0 0 12px}
-  .cyc-row{display:flex;align-items:stretch;flex-wrap:wrap;gap:10px}
-  .cyc-step{flex:1 1 150px;min-width:140px;background:var(--card);border:2px solid var(--line);box-shadow:4px 4px 0 var(--shadow);
-    padding:12px 14px;display:flex;flex-direction:column;gap:4px}
-  .cyc-step .cyc-k{font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-  .cyc-step .cyc-t{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1.05rem;line-height:1}
-  .cyc-step .cyc-d{font-family:var(--mono);font-size:.62rem;line-height:1.5;color:var(--fg-faint)}
-  .cyc-step.found{background:var(--neon);border-color:var(--ink);box-shadow:4px 4px 0 var(--neon-deep)}
-  .cyc-step.found .cyc-k{color:var(--ink)}
-  .cyc-step.found .cyc-t,.cyc-step.found .cyc-d{color:var(--ink)}
-  .cyc-arrow{align-self:center;font-family:var(--mono);font-weight:700;font-size:1.3rem;color:var(--accent);flex:0 0 auto;line-height:1}
-  .cyc-loop{flex:3 1 460px;min-width:260px;border:2px dashed var(--line-soft);padding:10px 10px 12px;position:relative}
-  .cyc-loop-lbl{position:absolute;top:-9px;left:12px;background:var(--ground);padding:0 7px;font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
-  .cyc-loop .cyc-row{gap:8px}
-  .cyc-loop .cyc-step{box-shadow:3px 3px 0 var(--shadow)}
-  .cyc-loopback{color:var(--accent-ink)}
+  .cyc-cap{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-faint);margin:0 0 18px}
+  .cyc-track{display:flex;align-items:flex-start;justify-content:center}
+  .cyc-node{flex:0 0 auto;width:132px;max-width:30vw;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
+  .cyc-dot{box-sizing:border-box;width:14px;height:14px;border-radius:50%;background:var(--ground);border:2px solid var(--line);flex:none}
+  .cyc-node.found .cyc-dot{background:var(--neon);border-color:var(--ink);box-shadow:0 0 0 3px var(--neon-deep)}
+  .cyc-t{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;line-height:1}
+  .cyc-node.found .cyc-t{color:var(--accent-ink)}
+  .cyc-k{font-family:var(--mono);font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  .cyc-d{font-family:var(--mono);font-size:.6rem;line-height:1.5;color:var(--fg-faint)}
+  .cyc-seg{flex:0 0 44px;width:44px;height:2px;background:var(--line-soft);margin-top:6px}
+  .cyc-loopwrap{position:relative;display:flex;align-items:flex-start;flex:1 1 auto;padding-bottom:32px}
+  .cyc-loopwrap .cyc-seg{flex:1 1 auto;width:auto;min-width:18px}
+  .cyc-return{position:absolute;left:66px;right:66px;bottom:8px;height:20px;border:2px solid var(--accent-ink);border-top:0;border-radius:0 0 14px 14px;opacity:.7}
+  .cyc-return .lbl{position:absolute;left:50%;bottom:-10px;transform:translateX(-50%);background:var(--ground);padding:0 8px;font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);white-space:nowrap}
+  .cyc-mob{display:none}
   @media (max-width:560px){
-    .cyc-row{flex-direction:column;align-items:stretch}
-    .cyc-arrow{transform:rotate(90deg);align-self:center;margin:-2px 0}
-    .cyc-loop{flex-basis:auto}
+    .cyc-track{flex-direction:column;align-items:center}
+    .cyc-loopwrap{flex-direction:column;align-items:center;flex:none;width:100%;padding-bottom:0}
+    .cyc-seg,.cyc-loopwrap .cyc-seg{flex:0 0 auto;width:2px;height:16px;min-width:0;margin:0}
+    .cyc-node{width:auto;max-width:82vw}
+    .cyc-return{display:none}
+    .cyc-mob{display:block;margin-top:12px;font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);text-align:center}
   }
 
   /* ---------- ACCORDION ---------- */
@@ -313,37 +315,36 @@
     <!-- ============ CAMPAIGN CYCLE ============ -->
     <div class="cycle" role="img" aria-label="Campaign cycle: build the foundation and infrastructure first, then repeat release, play, record.">
       <p class="cyc-cap">The cycle — build the base once, then loop</p>
-      <div class="cyc-row">
-        <div class="cyc-step found">
-          <span class="cyc-k">Start here · once</span>
+      <div class="cyc-track">
+        <div class="cyc-node found">
+          <span class="cyc-dot" aria-hidden="true"></span>
+          <span class="cyc-k">Once</span>
           <span class="cyc-t">Foundation</span>
           <span class="cyc-d">Build the infrastructure first so every effort after it pays off more.</span>
         </div>
-        <span class="cyc-arrow" aria-hidden="true">→</span>
-        <div class="cyc-loop">
-          <span class="cyc-loop-lbl">Repeat</span>
-          <div class="cyc-row">
-            <div class="cyc-step">
-              <span class="cyc-k">Then</span>
-              <span class="cyc-t">Release</span>
-              <span class="cyc-d">Album 1, then each new record.</span>
-            </div>
-            <span class="cyc-arrow" aria-hidden="true">→</span>
-            <div class="cyc-step">
-              <span class="cyc-k">Next</span>
-              <span class="cyc-t">Play</span>
-              <span class="cyc-d">One-offs, weekends, 1–2 week runs.</span>
-            </div>
-            <span class="cyc-arrow" aria-hidden="true">→</span>
-            <div class="cyc-step">
-              <span class="cyc-k">Next</span>
-              <span class="cyc-t">Record</span>
-              <span class="cyc-d">Make the next release.</span>
-            </div>
-            <span class="cyc-arrow cyc-loopback" aria-hidden="true" title="back to Release">↺</span>
+        <span class="cyc-seg" aria-hidden="true"></span>
+        <div class="cyc-loopwrap">
+          <div class="cyc-node">
+            <span class="cyc-dot" aria-hidden="true"></span>
+            <span class="cyc-t">Release</span>
+            <span class="cyc-d">Album 1, then each new record.</span>
           </div>
+          <span class="cyc-seg" aria-hidden="true"></span>
+          <div class="cyc-node">
+            <span class="cyc-dot" aria-hidden="true"></span>
+            <span class="cyc-t">Play</span>
+            <span class="cyc-d">One-offs, weekends, 1–2 week runs.</span>
+          </div>
+          <span class="cyc-seg" aria-hidden="true"></span>
+          <div class="cyc-node">
+            <span class="cyc-dot" aria-hidden="true"></span>
+            <span class="cyc-t">Record</span>
+            <span class="cyc-d">Make the next release.</span>
+          </div>
+          <span class="cyc-return" aria-hidden="true"><span class="lbl">↺ repeat</span></span>
         </div>
       </div>
+      <div class="cyc-mob" aria-hidden="true">↺ Release → Play → Record repeats</div>
     </div>
 
     <!-- ============ ACCORDION 1: CAMPAIGN GOALS ============ -->
