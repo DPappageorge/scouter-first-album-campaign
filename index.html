@@ -68,7 +68,8 @@
   .rule{height:2px;background:var(--line);border:0;margin:0}
 
   /* ---------- CAMPAIGN TIMELINES ---------- */
-  .cycle{margin:0 0 26px;display:flex;flex-direction:column;gap:30px}
+  .cycle{margin:38px 0 26px;display:flex;flex-direction:column;gap:30px}
+  .cyc-foundation{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1.3rem;line-height:1;color:var(--accent-ink);margin:0}
   .cyc-track{display:flex;align-items:flex-start;justify-content:center}
   .cyc-node{flex:0 0 auto;width:132px;max-width:30vw;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
   .cyc-dot{box-sizing:border-box;width:14px;height:14px;border-radius:50%;background:var(--ground);border:2px solid var(--line);flex:none}
@@ -79,6 +80,7 @@
   .cyc-d{font-family:var(--mono);font-size:.6rem;line-height:1.5;color:var(--fg-faint)}
   .cyc-seg{flex:0 0 44px;width:44px;height:2px;background:var(--line-soft);margin-top:6px}
   .cyc-loopwrap{position:relative;display:flex;align-items:flex-start;flex:1 1 auto;padding-bottom:32px}
+  .cyc-loopwrap.bare{padding-bottom:0}
   .cyc-loopwrap .cyc-seg{flex:1 1 auto;width:auto;min-width:18px}
   .cyc-return{position:absolute;left:66px;right:66px;bottom:8px;height:20px;border:2px solid var(--accent-ink);border-top:0;border-radius:0 0 14px 14px;opacity:.7}
   .cyc-return .lbl{position:absolute;left:50%;bottom:-10px;transform:translateX(-50%);background:var(--ground);padding:0 8px;font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);white-space:nowrap}
@@ -310,7 +312,8 @@
   <div class="wrap">
 
     <!-- ============ CAMPAIGN TIMELINES ============ -->
-    <div class="cycle" role="img" aria-label="Three parallel timelines — music, video games, and comic books — each: release, play, record, then repeat.">
+    <div class="cycle" role="img" aria-label="Foundation, then three timelines — music (release, play/promote, record, repeat), video games, and comic books.">
+      <h2 class="cyc-foundation">Foundation</h2>
       <div class="cyc-track">
         <div class="cyc-node found">
           <span class="cyc-dot" aria-hidden="true"></span>
@@ -326,8 +329,8 @@
           <span class="cyc-seg" aria-hidden="true"></span>
           <div class="cyc-node">
             <span class="cyc-dot" aria-hidden="true"></span>
-            <span class="cyc-t">Play</span>
-            <span class="cyc-d">One-offs, weekends, 1–2 week runs.</span>
+            <span class="cyc-t">Play/Promote</span>
+            <span class="cyc-d">One-offs, weekends, multiday.</span>
           </div>
           <span class="cyc-seg" aria-hidden="true"></span>
           <div class="cyc-node">
@@ -345,25 +348,12 @@
           <span class="cyc-t">Video Games</span>
         </div>
         <span class="cyc-seg" aria-hidden="true"></span>
-        <div class="cyc-loopwrap">
-          <div class="cyc-node">
-            <span class="cyc-dot" aria-hidden="true"></span>
-            <span class="cyc-t">Release</span>
-            <span class="cyc-d">Album 1, then each new record.</span>
-          </div>
+        <div class="cyc-loopwrap bare">
+          <div class="cyc-node"><span class="cyc-dot" aria-hidden="true"></span></div>
           <span class="cyc-seg" aria-hidden="true"></span>
-          <div class="cyc-node">
-            <span class="cyc-dot" aria-hidden="true"></span>
-            <span class="cyc-t">Play</span>
-            <span class="cyc-d">One-offs, weekends, 1–2 week runs.</span>
-          </div>
+          <div class="cyc-node"><span class="cyc-dot" aria-hidden="true"></span></div>
           <span class="cyc-seg" aria-hidden="true"></span>
-          <div class="cyc-node">
-            <span class="cyc-dot" aria-hidden="true"></span>
-            <span class="cyc-t">Record</span>
-            <span class="cyc-d">Make the next release.</span>
-          </div>
-          <span class="cyc-return" aria-hidden="true"><span class="lbl">↺ repeat</span></span>
+          <div class="cyc-node"><span class="cyc-dot" aria-hidden="true"></span></div>
         </div>
       </div>
 
