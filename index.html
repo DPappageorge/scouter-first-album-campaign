@@ -69,24 +69,22 @@
 
   /* ---------- CAMPAIGN TIMELINES ---------- */
   .cycle{margin:30px 0 28px;background:var(--card);border:2px solid var(--line);box-shadow:5px 5px 0 var(--shadow);padding:22px 26px 8px}
-  .cyc-foundation{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1.35rem;line-height:1;color:var(--accent-ink);margin:0 0 16px;padding-bottom:16px;border-bottom:2px solid var(--line-soft)}
-  .cyc-track{display:flex;align-items:flex-start;justify-content:center;padding:18px 0}
+  .cyc-foundation{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1.3rem;line-height:1;color:var(--accent-ink);margin:0 0 18px;padding-bottom:18px;border-bottom:2px solid var(--line-soft)}
+  .cyc-track{display:flex;align-items:flex-start;justify-content:center;padding:22px 0 20px}
   .cyc-track + .cyc-track{border-top:1px solid var(--line-soft)}
-  .cyc-node{flex:0 0 auto;width:142px;max-width:30vw;display:flex;flex-direction:column;align-items:center;text-align:center;gap:9px}
-  .cyc-dot{box-sizing:border-box;width:15px;height:15px;border-radius:50%;background:var(--card);border:2px solid var(--accent-ink);flex:none}
-  .cyc-node.found .cyc-dot{width:17px;height:17px;background:var(--neon);border-color:var(--ink);box-shadow:0 0 0 3px var(--neon-deep)}
-  .cyc-t{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1.02rem;line-height:1.05}
-  .cyc-node.found .cyc-t{color:var(--accent-ink);font-size:1.12rem}
-  .cyc-d{font-family:var(--mono);font-size:.66rem;line-height:1.5;color:var(--fg-soft)}
-  .cyc-seg{flex:0 0 40px;width:40px;height:2px;background:var(--line-soft);margin-top:7px}
+  .cyc-node{flex:0 0 auto;width:150px;max-width:30vw;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}
+  .cyc-dot{box-sizing:border-box;width:14px;height:14px;border-radius:50%;background:var(--card);border:2px solid var(--accent-ink);flex:none;margin-top:1px}
+  .cyc-node.found .cyc-dot{width:16px;height:16px;margin-top:0;background:var(--neon);border-color:var(--ink);box-shadow:0 0 0 4px color-mix(in srgb,var(--neon) 22%,transparent)}
+  .cyc-t{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;line-height:1.05;white-space:nowrap}
+  .cyc-node.found .cyc-t{color:var(--accent-ink);font-size:1.08rem}
+  .cyc-d{font-family:var(--mono);font-size:.64rem;line-height:1.55;color:var(--fg-soft)}
+  .cyc-seg{flex:0 0 36px;width:36px;height:2px;background:var(--line-soft);margin-top:7px}
   .cyc-loopwrap{position:relative;display:flex;align-items:flex-start;flex:1 1 auto;padding-bottom:30px}
   .cyc-loopwrap .cyc-seg{flex:1 1 auto;width:auto;min-width:18px}
-  .cyc-loopwrap.bare{min-height:108px;padding-bottom:0}
-  .cyc-flatline{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);height:2px;background:var(--fg-faint);opacity:.45}
-  .cyc-track:has(.bare){align-items:center}
-  .cyc-track:has(.bare) .cyc-seg{margin-top:0}
-  .cyc-return{position:absolute;left:71px;right:71px;bottom:6px;height:20px;border:2px solid var(--accent-ink);border-top:0;border-radius:0 0 14px 14px;opacity:.85}
-  .cyc-return .lbl{position:absolute;left:50%;bottom:-10px;transform:translateX(-50%);background:var(--card);padding:0 8px;font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);white-space:nowrap}
+  .cyc-loopwrap.bare{min-height:92px;padding-bottom:0}
+  .cyc-flatline{position:absolute;left:0;right:0;top:7px;height:2px;background:var(--fg-faint);opacity:.4}
+  .cyc-return{position:absolute;left:75px;right:75px;bottom:6px;height:20px;border:2px solid var(--accent-ink);border-top:0;border-radius:0 0 16px 16px;opacity:.85}
+  .cyc-return .lbl{position:absolute;left:50%;bottom:-10px;transform:translateX(-50%);background:var(--card);padding:0 9px;font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);white-space:nowrap}
   @media (max-width:560px){
     .cycle{padding:18px 16px 6px}
     .cyc-track{flex-direction:column;align-items:center}
@@ -94,6 +92,7 @@
     .cyc-loopwrap.bare{min-height:0}
     .cyc-seg,.cyc-loopwrap .cyc-seg{flex:0 0 auto;width:2px;height:16px;min-width:0;margin:0}
     .cyc-node{width:auto;max-width:82vw}
+    .cyc-t{white-space:normal}
     .cyc-return{display:none}
     .cyc-flatline{position:static;transform:none;width:120px;margin-top:4px}
   }
