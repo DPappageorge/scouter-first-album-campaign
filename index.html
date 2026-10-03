@@ -67,35 +67,36 @@
   .lead b{color:var(--fg)}
   .rule{height:2px;background:var(--line);border:0;margin:0}
 
-  /* ---------- CAMPAIGN CYCLE ---------- */
-  .cycle{margin:0 0 26px}
-  .cyc-cap{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-faint);margin:0 0 18px}
-  .cyc-track{display:flex;align-items:flex-start;justify-content:center}
-  .cyc-node{flex:0 0 auto;width:132px;max-width:30vw;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
-  .cyc-dot{box-sizing:border-box;width:14px;height:14px;border-radius:50%;background:var(--ground);border:2px solid var(--line);flex:none}
-  .cyc-node.found .cyc-dot{background:var(--neon);border-color:var(--ink);box-shadow:0 0 0 3px var(--neon-deep)}
-  .cyc-t{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;line-height:1}
-  .cyc-node.found .cyc-t{color:var(--accent-ink)}
-  .cyc-k{font-family:var(--mono);font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-  .cyc-d{font-family:var(--mono);font-size:.6rem;line-height:1.5;color:var(--fg-faint)}
-  .cyc-seg{flex:0 0 44px;width:44px;height:2px;background:var(--line-soft);margin-top:6px}
-  .cyc-loopwrap{position:relative;display:flex;align-items:flex-start;flex:1 1 auto;padding-bottom:32px}
-  .cyc-loopwrap .cyc-seg{flex:1 1 auto;width:auto;min-width:18px}
-  .cyc-return{position:absolute;left:66px;right:66px;bottom:8px;height:20px;border:2px solid var(--accent-ink);border-top:0;border-radius:0 0 14px 14px;opacity:.7}
-  .cyc-return .lbl{position:absolute;left:50%;bottom:-10px;transform:translateX(-50%);background:var(--ground);padding:0 8px;font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);white-space:nowrap}
-  .cyc-game,.cyc-comic{position:relative;height:30px;margin-top:4px}
-  .cyc-game-arc{position:absolute;left:66px;right:66px;bottom:8px;height:18px;border:2px solid var(--accent-ink);border-top:0;border-right:0;border-radius:0 0 0 14px;opacity:.7}
-  .cyc-game-arc .lbl{position:absolute;left:50%;bottom:-10px;transform:translateX(-50%);background:var(--ground);padding:0 8px;font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);white-space:nowrap}
-  .cyc-mob{display:none}
+  /* ---------- FOUNDATION + TIMELINES ---------- */
+  .cycle{margin:0 0 28px}
+  .cyc-found{display:flex;align-items:center;flex-wrap:wrap;gap:6px 14px;padding:12px 16px;border:2px solid var(--ink);background:var(--neon);box-shadow:4px 4px 0 var(--neon-deep);max-width:560px}
+  .cyc-found .fdot{box-sizing:border-box;width:16px;height:16px;border-radius:50%;background:var(--ground);border:2px solid var(--ink);flex:none}
+  .cyc-found .fmeta{display:flex;flex-direction:column;gap:3px}
+  .cyc-found .fk{font-family:var(--mono);font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
+  .cyc-found .ft{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1.15rem;line-height:1;color:var(--ink)}
+  .cyc-found .fd{font-family:var(--mono);font-size:.6rem;line-height:1.45;color:var(--ink);opacity:.82;flex:1 1 240px;min-width:200px}
+  .cyc-stem{width:2px;height:22px;background:var(--line-soft);margin-left:44px}
+  .cyc-lanes{display:flex;flex-direction:column;gap:14px}
+  .lane{display:grid;grid-template-columns:118px 1fr;align-items:center;gap:16px}
+  .lane-label{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem;line-height:1.05;color:var(--fg);text-align:right}
+  .lane-track{position:relative;height:24px}
+  .lane-track::before{content:"";position:absolute;left:7px;right:7px;top:7px;height:2px;background:var(--accent-ink);opacity:.5}
+  .lane-track.music{height:62px}
+  .tdot{position:absolute;top:1px;box-sizing:border-box;width:14px;height:14px;border-radius:50%;background:var(--ground);border:2px solid var(--accent-ink)}
+  .tdot.s{left:0}
+  .tdot.m{left:50%;transform:translateX(-50%)}
+  .tdot.e{right:0}
+  .tlabel{position:absolute;top:22px;font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-soft);white-space:nowrap}
+  .tlabel.s{left:0}
+  .tlabel.m{left:50%;transform:translateX(-50%)}
+  .tlabel.e{right:0}
+  .m-return{position:absolute;left:7px;right:7px;top:40px;height:16px;border:2px solid var(--accent-ink);border-top:0;border-radius:0 0 14px 14px;opacity:.55}
+  .m-return .lbl{position:absolute;left:50%;bottom:-10px;transform:translateX(-50%);background:var(--ground);padding:0 8px;font-family:var(--mono);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);white-space:nowrap}
   @media (max-width:560px){
-    .cyc-track{flex-direction:column;align-items:center}
-    .cyc-loopwrap{flex-direction:column;align-items:center;flex:none;width:100%;padding-bottom:0}
-    .cyc-seg,.cyc-loopwrap .cyc-seg{flex:0 0 auto;width:2px;height:16px;min-width:0;margin:0}
-    .cyc-node{width:auto;max-width:82vw}
-    .cyc-return{display:none}
-    .cyc-game,.cyc-comic{margin-top:14px}
-    .cyc-game-arc{left:0;right:0}
-    .cyc-mob{display:block;margin-top:12px;font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);text-align:center}
+    .cyc-found{max-width:none}
+    .cyc-stem{margin-left:24px}
+    .lane{grid-template-columns:1fr;gap:5px}
+    .lane-label{text-align:left}
   }
 
   /* ---------- ACCORDION ---------- */
@@ -317,44 +318,43 @@
 <section class="stack">
   <div class="wrap">
 
-    <!-- ============ CAMPAIGN CYCLE ============ -->
-    <div class="cycle" role="img" aria-label="Campaign cycle: build the foundation and infrastructure first, then repeat release, play, record.">
-      <div class="cyc-track">
-        <div class="cyc-node found">
-          <span class="cyc-dot" aria-hidden="true"></span>
-          <span class="cyc-k">Once</span>
-          <span class="cyc-t">Foundation</span>
-          <span class="cyc-d">Build the infrastructure first so every effort after it pays off more.</span>
+    <!-- ============ FOUNDATION + TIMELINES ============ -->
+    <div class="cycle" role="img" aria-label="Build the foundation first; then three parallel timelines run from it: music (release, play, record, repeat), video games, and comic books.">
+      <div class="cyc-found">
+        <span class="fdot" aria-hidden="true"></span>
+        <div class="fmeta">
+          <span class="fk">Once</span>
+          <span class="ft">Foundation</span>
         </div>
-        <span class="cyc-seg" aria-hidden="true"></span>
-        <div class="cyc-loopwrap">
-          <div class="cyc-node">
-            <span class="cyc-dot" aria-hidden="true"></span>
-            <span class="cyc-t">Release</span>
-            <span class="cyc-d">Album 1, then each new record.</span>
+        <span class="fd">Build the infrastructure first so every effort after it pays off more.</span>
+      </div>
+      <div class="cyc-stem" aria-hidden="true"></div>
+      <div class="cyc-lanes">
+        <div class="lane">
+          <div class="lane-label">Music</div>
+          <div class="lane-track music">
+            <span class="tdot s" aria-hidden="true"></span>
+            <span class="tdot m" aria-hidden="true"></span>
+            <span class="tdot e" aria-hidden="true"></span>
+            <span class="tlabel s">Release</span>
+            <span class="tlabel m">Play</span>
+            <span class="tlabel e">Record</span>
+            <span class="m-return" aria-hidden="true"><span class="lbl">↺ repeat</span></span>
           </div>
-          <span class="cyc-seg" aria-hidden="true"></span>
-          <div class="cyc-node">
-            <span class="cyc-dot" aria-hidden="true"></span>
-            <span class="cyc-t">Play</span>
-            <span class="cyc-d">One-offs, weekends, 1–2 week runs.</span>
+        </div>
+        <div class="lane">
+          <div class="lane-label">Video Games</div>
+          <div class="lane-track">
+            <span class="tdot s" aria-hidden="true"></span>
           </div>
-          <span class="cyc-seg" aria-hidden="true"></span>
-          <div class="cyc-node">
-            <span class="cyc-dot" aria-hidden="true"></span>
-            <span class="cyc-t">Record</span>
-            <span class="cyc-d">Make the next release.</span>
+        </div>
+        <div class="lane">
+          <div class="lane-label">Comic Books</div>
+          <div class="lane-track">
+            <span class="tdot s" aria-hidden="true"></span>
           </div>
-          <span class="cyc-return" aria-hidden="true"><span class="lbl">↺ repeat</span></span>
         </div>
       </div>
-      <div class="cyc-game" role="img" aria-label="Video game runs continuously from the foundation through the whole cycle.">
-        <span class="cyc-game-arc" aria-hidden="true"><span class="lbl">Video Game</span></span>
-      </div>
-      <div class="cyc-comic" role="img" aria-label="Comic books run continuously from the foundation through the whole cycle.">
-        <span class="cyc-game-arc" aria-hidden="true"><span class="lbl">Comic Books</span></span>
-      </div>
-      <div class="cyc-mob" aria-hidden="true">↺ Release → Play → Record repeats</div>
     </div>
 
     <!-- ============ ACCORDION 1: CAMPAIGN GOALS ============ -->
